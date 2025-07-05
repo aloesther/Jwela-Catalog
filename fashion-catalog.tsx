@@ -513,7 +513,7 @@ export default function Component() {
   <div
     className="hidden md:block relative bg-cover bg-center bg-no-repeat"
     style={{
-      backgroundImage: "url('/images/hero-banner.jpg')",
+      backgroundImage: "url('/Jwela Website Header (1).jpg')",
       height: "400px",
     }}
   >
@@ -527,9 +527,7 @@ export default function Component() {
     <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md opacity-90">  {/* ← CHANGED: Added responsive text, drop shadow, and opacity */}
       iscover our fashion essentials
         </p>
-        <Button size="lg" className="px-8 bg-white text-black hover:bg-gray-100 font-semibold">
-          Shop Now
-        </Button>
+        <Button size="lg">Shop Now</Button>
       </div>
     </div>
   </div>
@@ -538,7 +536,7 @@ export default function Component() {
   <div
     className="md:hidden relative bg-cover bg-center bg-no-repeat"
     style={{
-      backgroundImage: "url('/images/hero-banner.jpg')",
+      backgroundImage: "url('/Jwela Website Header (1).jpg')",
       height: "300px",
     }}
   >
