@@ -507,56 +507,63 @@ export default function Component() {
         </div>
       </header>
 
-     {/* Hero Section */}
-<section className="relative">
+ {/* Hero Section */}
+<section className="relative overflow-hidden">
   {/* Desktop Banner */}
-  <div
-    // Instead of bg-cover, use bg-contain to show full width
-    className="hidden md:block relative bg-cover bg-center bg-no-repeat"
-    style={{
-      backgroundImage: "url('/Jwela Website Header (1).jpg')",
-      height: "500px",
-      backgroundPosition: "center center", 
-    }}
-  >
+  <div className="hidden md:block relative">
+    <img
+      src="/Jwela Website Header (1).jpg"
+      alt="Fashion Banner"
+      className="w-full h-auto max-h-[500px] object-contain"
+    />
+
     {/* Optional overlay for better text readability if needed */}
     <div className="absolute inset-0 bg-black/10"></div>
 
     {/* Content positioned over the banner */}
-    <div className="relative container mx-auto px-4 h-full flex items-center justify-center">
-      <div className="text-center text-white">
-         <h2 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">New Collection</h2>  {/* ← CHANGED: Added responsive text size and drop shadow */}
-    <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md opacity-90">  {/* ← CHANGED: Added responsive text, drop shadow, and opacity */}
-      iscover our fashion essentials
-        </p>
-        <Button size="lg">Shop Now</Button>
+    <div className="absolute inset-0 flex items-center justify-center">
+      <div className="container mx-auto px-4">
+        <div className="text-center text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">New Collection</h2>
+          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md opacity-90">
+            Discover our fashion essentials
+          </p>
+          <Button size="lg" className="px-8 bg-white text-black hover:bg-gray-100 font-semibold">
+            Shop Now
+          </Button>
+        </div>
       </div>
     </div>
   </div>
 
   {/* Mobile Banner */}
-  <div
-    // Instead of bg-cover, use bg-contain to show full width
-    className="hidden md:block relative bg-cover bg-center bg-no-repeat"
-    style={{
-      backgroundImage: "url('/Jwela Website Header (1).jpg')",
-      height: "400px",
-      backgroundPosition: "center center",
-    }}
-  >
+  <div className="md:hidden relative">
+    <img
+      src="/Jwela Website Header (1).jpg"
+      alt="Fashion Banner"
+      className="w-full h-auto max-h-[400px] object-contain"
+    />
+
     {/* Stronger overlay for mobile readability */}
     <div className="absolute inset-0 bg-black/30"></div>
-  
-  {/* Content */}
-  <div className="relative container mx-auto px-4 text-center text-white">  {/* ← CHANGED: Added 'relative' and 'text-white' */}
-    <h2 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">New Collection</h2>  {/* ← CHANGED: Added responsive text size and drop shadow */}
-    <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md opacity-90">  {/* ← CHANGED: Added responsive text, drop shadow, and opacity */}
-      iscover our fashion essentials
-    </p>
-      <Button size="lg">Shop Now</Button>
+
+    {/* Mobile Content */}
+    <div className="absolute inset-0 flex items-center justify-center">
+      <div className="container mx-auto px-4">
+        <div className="text-center text-white">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-3 drop-shadow-lg">New Collection</h2>
+          <p className="text-base sm:text-lg mb-6 max-w-sm mx-auto drop-shadow-md opacity-90">
+            Discover our fashion essentials
+          </p>
+          <Button size="default" className="px-6 bg-white text-black hover:bg-gray-100 font-semibold">
+            Shop Now
+          </Button>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
-
+      
       {/* Filters and Search */}
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row gap-4 mb-8">
