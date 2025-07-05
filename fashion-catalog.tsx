@@ -511,7 +511,7 @@ export default function Component() {
 <section
   className="relative py-16 bg-cover bg-center bg-no-repeat"  // ← CHANGED: Added background image classes
   style={{
-    backgroundImage: "url('/placeholder.svg?height=500&width=1920')",  // ← NEW: Background image
+    backgroundImage: "url('public/Jwela Website Header (1).jpg?height=500&width=1920')",  // ← NEW: Background image
     minHeight: "500px",  // ← NEW: Minimum height
   }}
 >
