@@ -512,10 +512,11 @@ export default function Component() {
   {/* Desktop Banner */}
   <div
     // Instead of bg-cover, use bg-contain to show full width
-    className="hidden md:block relative bg-contain bg-center bg-no-repeat"
+    className="hidden md:block relative bg-cover bg-center bg-no-repeat"
     style={{
       backgroundImage: "url('/Jwela Website Header (1).jpg')",
-      height: "400px",
+      height: "500px",
+      backgroundPosition: "center center", 
     }}
   >
     {/* Optional overlay for better text readability if needed */}
@@ -536,10 +537,11 @@ export default function Component() {
   {/* Mobile Banner */}
   <div
     // Instead of bg-cover, use bg-contain to show full width
-    className="hidden md:block relative bg-contain bg-center bg-no-repeat"
+    className="hidden md:block relative bg-cover bg-center bg-no-repeat"
     style={{
       backgroundImage: "url('/Jwela Website Header (1).jpg')",
-      height: "300px",
+      height: "400px",
+      backgroundPosition: "center center",
     }}
   >
     {/* Stronger overlay for mobile readability */}
