@@ -541,7 +541,7 @@ export default function Component() {
     <img
       src="/Jwela Website Header (1).jpg"
       alt="Fashion Banner"
-      className="w-full h-auto max-h-[500px] object-contain"
+      className="w-full h-auto object-contain"
     />
 
     {/* Stronger overlay for mobile readability */}
