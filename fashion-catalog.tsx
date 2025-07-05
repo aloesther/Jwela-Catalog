@@ -508,13 +508,27 @@ export default function Component() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-slate-50 to-slate-100 py-12">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-4">Jwela Collection</h2>
-          <p className="text-xl text-muted-foreground mb-8">Discover our fashion essentials</p>
-          <Button size="lg">Shop Now</Button>
-        </div>
-      </section>
+<section
+  className="relative py-16 bg-cover bg-center bg-no-repeat"  // ← CHANGED: Added background image classes
+  style={{
+    backgroundImage: "url('/placeholder.svg?height=500&width=1920')",  // ← NEW: Background image
+    minHeight: "500px",  // ← NEW: Minimum height
+  }}
+>
+  {/* Dark overlay for better text readability */}
+  <div className="absolute inset-0 bg-black/40"></div>  {/* ← NEW: Dark overlay */}
+
+  {/* Content */}
+  <div className="relative container mx-auto px-4 text-center text-white">  {/* ← CHANGED: Added 'relative' and 'text-white' */}
+    <h2 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">New Collection 2024</h2>  {/* ← CHANGED: Added responsive text size and drop shadow */}
+    <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md opacity-90">  {/* ← CHANGED: Added responsive text, drop shadow, and opacity */}
+      Discover our latest fashion pieces crafted with premium materials and contemporary designs
+    </p>
+    <Button size="lg" className="px-8 bg-white text-black hover:bg-gray-100 font-semibold">  {/* ← CHANGED: White button with black text */}
+      Shop Now
+    </Button>
+  </div>
+</section>
 
       {/* Filters and Search */}
       <div className="container mx-auto px-4 py-8">
