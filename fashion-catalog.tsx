@@ -550,9 +550,8 @@ export default function Component() {
     <div className="absolute inset-0 flex items-center justify-center">
       <div className="container mx-auto px-4">
         <div className="text-center text-white">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-3 drop-shadow-lg">New Collection</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-3 drop-shadow-lg"></h2>
           <p className="text-base sm:text-lg mb-6 max-w-sm mx-auto drop-shadow-md opacity-90">
-            Discover our fashion essentials
           </p>
           <Button size="default" className="px-6 bg-white text-black hover:bg-gray-100 font-semibold">
             Shop Now
