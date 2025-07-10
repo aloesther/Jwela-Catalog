@@ -524,9 +524,6 @@ export default function Component() {
     <div className="absolute inset-0 flex items-center justify-center">
       <div className="container mx-auto px-4">
         <div className="text-center text-white">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">New Collection</h2>
-          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md opacity-90">
-            Discover our fashion essentials
           </p>
           <Button size="lg" className="px-8 bg-white text-black hover:bg-gray-100 font-semibold">
             Shop Now
