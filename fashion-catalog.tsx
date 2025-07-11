@@ -561,7 +561,13 @@ export default function Component() {
     </div>
   </div>
 </section>
-      
+
+      {/* 🆕 NEW SECTION ADDED HERE 🆕 */}
+{/* Product Showcase Section */}
+<section className="container mx-auto px-4 py-16" />
+  // ... all the new product showcase code ...
+</section>
+    
       {/* Filters and Search */}
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row gap-4 mb-8">
