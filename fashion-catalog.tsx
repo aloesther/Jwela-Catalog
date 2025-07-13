@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Search, Filter, Heart, ShoppingBag, Star, X, Instagram } from "lucide-react"
+import { Search, Filter, Heart, ShoppingBag, Star, X, Instagram, ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
@@ -38,12 +38,21 @@ const products = [
     images: {
       turquoise: [
         "/images/jwela-agbada.jpg",
+        "/placeholder.svg?height=400&width=300&text=Turquoise+Agbada+Back",
+        "/placeholder.svg?height=400&width=300&text=Turquoise+Agbada+Side",
+        "/placeholder.svg?height=400&width=300&text=Turquoise+Agbada+Detail",
       ],
       navy: [
         "/placeholder.svg?height=400&width=300&text=Navy+Agbada+Front",
+        "/placeholder.svg?height=400&width=300&text=Navy+Agbada+Back",
+        "/placeholder.svg?height=400&width=300&text=Navy+Agbada+Side",
+        "/placeholder.svg?height=400&width=300&text=Navy+Agbada+Detail",
       ],
       white: [
-        "/placeholder.svg?height=400&width=300&text=White+Agbada+Front",       
+        "/placeholder.svg?height=400&width=300&text=White+Agbada+Front",
+        "/placeholder.svg?height=400&width=300&text=White+Agbada+Back",
+        "/placeholder.svg?height=400&width=300&text=White+Agbada+Side",
+        "/placeholder.svg?height=400&width=300&text=White+Agbada+Detail",
       ],
     },
   },
@@ -60,6 +69,20 @@ const products = [
     sizes: ["S", "M", "L", "XL"],
     isNew: true,
     isSale: false,
+    images: {
+      "light blue": [
+        "/placeholder.svg?height=400&width=300&text=Light+Blue+Jacket+Front",
+        "/placeholder.svg?height=400&width=300&text=Light+Blue+Jacket+Back",
+        "/placeholder.svg?height=400&width=300&text=Light+Blue+Jacket+Open",
+        "/placeholder.svg?height=400&width=300&text=Light+Blue+Jacket+Detail",
+      ],
+      "dark blue": [
+        "/placeholder.svg?height=400&width=300&text=Dark+Blue+Jacket+Front",
+        "/placeholder.svg?height=400&width=300&text=Dark+Blue+Jacket+Back",
+        "/placeholder.svg?height=400&width=300&text=Dark+Blue+Jacket+Open",
+        "/placeholder.svg?height=400&width=300&text=Dark+Blue+Jacket+Detail",
+      ],
+    },
   },
   {
     id: 3,
@@ -74,6 +97,26 @@ const products = [
     sizes: ["24", "26", "28", "30", "32"],
     isNew: false,
     isSale: false,
+    images: {
+      black: [
+        "/placeholder.svg?height=400&width=300&text=Black+Jeans+Front",
+        "/placeholder.svg?height=400&width=300&text=Black+Jeans+Back",
+        "/placeholder.svg?height=400&width=300&text=Black+Jeans+Side",
+        "/placeholder.svg?height=400&width=300&text=Black+Jeans+Detail",
+      ],
+      blue: [
+        "/placeholder.svg?height=400&width=300&text=Blue+Jeans+Front",
+        "/placeholder.svg?height=400&width=300&text=Blue+Jeans+Back",
+        "/placeholder.svg?height=400&width=300&text=Blue+Jeans+Side",
+        "/placeholder.svg?height=400&width=300&text=Blue+Jeans+Detail",
+      ],
+      grey: [
+        "/placeholder.svg?height=400&width=300&text=Grey+Jeans+Front",
+        "/placeholder.svg?height=400&width=300&text=Grey+Jeans+Back",
+        "/placeholder.svg?height=400&width=300&text=Grey+Jeans+Side",
+        "/placeholder.svg?height=400&width=300&text=Grey+Jeans+Detail",
+      ],
+    },
   },
   {
     id: 4,
@@ -89,6 +132,20 @@ const products = [
     sizes: ["XS", "S", "M", "L"],
     isNew: false,
     isSale: true,
+    images: {
+      "floral pink": [
+        "/placeholder.svg?height=400&width=300&text=Floral+Pink+Dress+Front",
+        "/placeholder.svg?height=400&width=300&text=Floral+Pink+Dress+Back",
+        "/placeholder.svg?height=400&width=300&text=Floral+Pink+Dress+Side",
+        "/placeholder.svg?height=400&width=300&text=Floral+Pink+Dress+Detail",
+      ],
+      "floral blue": [
+        "/placeholder.svg?height=400&width=300&text=Floral+Blue+Dress+Front",
+        "/placeholder.svg?height=400&width=300&text=Floral+Blue+Dress+Back",
+        "/placeholder.svg?height=400&width=300&text=Floral+Blue+Dress+Side",
+        "/placeholder.svg?height=400&width=300&text=Floral+Blue+Dress+Detail",
+      ],
+    },
   },
   {
     id: 5,
@@ -103,15 +160,24 @@ const products = [
     sizes: ["One Size"],
     isNew: true,
     isSale: false,
-       images: {
-      Black: [
-        "/images/jwela-agbada.jpg",
+    images: {
+      black: [
+        "/placeholder.svg?height=400&width=300&text=Black+Watch+Front",
+        "/placeholder.svg?height=400&width=300&text=Black+Watch+Side",
+        "/placeholder.svg?height=400&width=300&text=Black+Watch+Back",
+        "/placeholder.svg?height=400&width=300&text=Black+Watch+Detail",
       ],
-      Silver: [
-        "/placeholder.svg?height=400&width=300&text=Navy+Agbada+Front",
+      silver: [
+        "/placeholder.svg?height=400&width=300&text=Silver+Watch+Front",
+        "/placeholder.svg?height=400&width=300&text=Silver+Watch+Side",
+        "/placeholder.svg?height=400&width=300&text=Silver+Watch+Back",
+        "/placeholder.svg?height=400&width=300&text=Silver+Watch+Detail",
       ],
-      Gold: [
-        "/placeholder.svg?height=400&width=300&text=White+Agbada+Front",       
+      gold: [
+        "/placeholder.svg?height=400&width=300&text=Gold+Watch+Front",
+        "/placeholder.svg?height=400&width=300&text=Gold+Watch+Side",
+        "/placeholder.svg?height=400&width=300&text=Gold+Watch+Back",
+        "/placeholder.svg?height=400&width=300&text=Gold+Watch+Detail",
       ],
     },
   },
@@ -129,6 +195,26 @@ const products = [
     sizes: ["One Size"],
     isNew: false,
     isSale: true,
+    images: {
+      "rose gold": [
+        "/placeholder.svg?height=400&width=300&text=Rose+Gold+Watch+Front",
+        "/placeholder.svg?height=400&width=300&text=Rose+Gold+Watch+Side",
+        "/placeholder.svg?height=400&width=300&text=Rose+Gold+Watch+Back",
+        "/placeholder.svg?height=400&width=300&text=Rose+Gold+Watch+Detail",
+      ],
+      silver: [
+        "/placeholder.svg?height=400&width=300&text=Silver+Ladies+Watch+Front",
+        "/placeholder.svg?height=400&width=300&text=Silver+Ladies+Watch+Side",
+        "/placeholder.svg?height=400&width=300&text=Silver+Ladies+Watch+Back",
+        "/placeholder.svg?height=400&width=300&text=Silver+Ladies+Watch+Detail",
+      ],
+      gold: [
+        "/placeholder.svg?height=400&width=300&text=Gold+Ladies+Watch+Front",
+        "/placeholder.svg?height=400&width=300&text=Gold+Ladies+Watch+Side",
+        "/placeholder.svg?height=400&width=300&text=Gold+Ladies+Watch+Back",
+        "/placeholder.svg?height=400&width=300&text=Gold+Ladies+Watch+Detail",
+      ],
+    },
   },
   {
     id: 7,
@@ -143,6 +229,26 @@ const products = [
     sizes: ["One Size"],
     isNew: false,
     isSale: false,
+    images: {
+      black: [
+        "/placeholder.svg?height=400&width=300&text=Black+Bag+Front",
+        "/placeholder.svg?height=400&width=300&text=Black+Bag+Side",
+        "/placeholder.svg?height=400&width=300&text=Black+Bag+Open",
+        "/placeholder.svg?height=400&width=300&text=Black+Bag+Detail",
+      ],
+      brown: [
+        "/placeholder.svg?height=400&width=300&text=Brown+Bag+Front",
+        "/placeholder.svg?height=400&width=300&text=Brown+Bag+Side",
+        "/placeholder.svg?height=400&width=300&text=Brown+Bag+Open",
+        "/placeholder.svg?height=400&width=300&text=Brown+Bag+Detail",
+      ],
+      tan: [
+        "/placeholder.svg?height=400&width=300&text=Tan+Bag+Front",
+        "/placeholder.svg?height=400&width=300&text=Tan+Bag+Side",
+        "/placeholder.svg?height=400&width=300&text=Tan+Bag+Open",
+        "/placeholder.svg?height=400&width=300&text=Tan+Bag+Detail",
+      ],
+    },
   },
   {
     id: 8,
@@ -157,6 +263,20 @@ const products = [
     sizes: ["One Size"],
     isNew: false,
     isSale: false,
+    images: {
+      black: [
+        "/placeholder.svg?height=400&width=300&text=Black+Wallet+Front",
+        "/placeholder.svg?height=400&width=300&text=Black+Wallet+Open",
+        "/placeholder.svg?height=400&width=300&text=Black+Wallet+Back",
+        "/placeholder.svg?height=400&width=300&text=Black+Wallet+Detail",
+      ],
+      brown: [
+        "/placeholder.svg?height=400&width=300&text=Brown+Wallet+Front",
+        "/placeholder.svg?height=400&width=300&text=Brown+Wallet+Open",
+        "/placeholder.svg?height=400&width=300&text=Brown+Wallet+Back",
+        "/placeholder.svg?height=400&width=300&text=Brown+Wallet+Detail",
+      ],
+    },
   },
   {
     id: 9,
@@ -172,6 +292,20 @@ const products = [
     sizes: ["One Size"],
     isNew: false,
     isSale: true,
+    images: {
+      gold: [
+        "/placeholder.svg?height=400&width=300&text=Gold+Necklace+Front",
+        "/placeholder.svg?height=400&width=300&text=Gold+Necklace+Side",
+        "/placeholder.svg?height=400&width=300&text=Gold+Necklace+Back",
+        "/placeholder.svg?height=400&width=300&text=Gold+Necklace+Detail",
+      ],
+      silver: [
+        "/placeholder.svg?height=400&width=300&text=Silver+Necklace+Front",
+        "/placeholder.svg?height=400&width=300&text=Silver+Necklace+Side",
+        "/placeholder.svg?height=400&width=300&text=Silver+Necklace+Back",
+        "/placeholder.svg?height=400&width=300&text=Silver+Necklace+Detail",
+      ],
+    },
   },
   {
     id: 10,
@@ -186,6 +320,26 @@ const products = [
     sizes: ["One Size"],
     isNew: true,
     isSale: false,
+    images: {
+      black: [
+        "/placeholder.svg?height=400&width=300&text=Black+Sunglasses+Front",
+        "/placeholder.svg?height=400&width=300&text=Black+Sunglasses+Side",
+        "/placeholder.svg?height=400&width=300&text=Black+Sunglasses+Folded",
+        "/placeholder.svg?height=400&width=300&text=Black+Sunglasses+Detail",
+      ],
+      brown: [
+        "/placeholder.svg?height=400&width=300&text=Brown+Sunglasses+Front",
+        "/placeholder.svg?height=400&width=300&text=Brown+Sunglasses+Side",
+        "/placeholder.svg?height=400&width=300&text=Brown+Sunglasses+Folded",
+        "/placeholder.svg?height=400&width=300&text=Brown+Sunglasses+Detail",
+      ],
+      blue: [
+        "/placeholder.svg?height=400&width=300&text=Blue+Sunglasses+Front",
+        "/placeholder.svg?height=400&width=300&text=Blue+Sunglasses+Side",
+        "/placeholder.svg?height=400&width=300&text=Blue+Sunglasses+Folded",
+        "/placeholder.svg?height=400&width=300&text=Blue+Sunglasses+Detail",
+      ],
+    },
   },
   {
     id: 11,
@@ -200,6 +354,26 @@ const products = [
     sizes: ["One Size"],
     isNew: false,
     isSale: false,
+    images: {
+      floral: [
+        "/placeholder.svg?height=400&width=300&text=Floral+Scarf+Front",
+        "/placeholder.svg?height=400&width=300&text=Floral+Scarf+Folded",
+        "/placeholder.svg?height=400&width=300&text=Floral+Scarf+Worn",
+        "/placeholder.svg?height=400&width=300&text=Floral+Scarf+Detail",
+      ],
+      geometric: [
+        "/placeholder.svg?height=400&width=300&text=Geometric+Scarf+Front",
+        "/placeholder.svg?height=400&width=300&text=Geometric+Scarf+Folded",
+        "/placeholder.svg?height=400&width=300&text=Geometric+Scarf+Worn",
+        "/placeholder.svg?height=400&width=300&text=Geometric+Scarf+Detail",
+      ],
+      solid: [
+        "/placeholder.svg?height=400&width=300&text=Solid+Scarf+Front",
+        "/placeholder.svg?height=400&width=300&text=Solid+Scarf+Folded",
+        "/placeholder.svg?height=400&width=300&text=Solid+Scarf+Worn",
+        "/placeholder.svg?height=400&width=300&text=Solid+Scarf+Detail",
+      ],
+    },
   },
   {
     id: 12,
@@ -214,6 +388,20 @@ const products = [
     sizes: ["32", "34", "36", "38", "40"],
     isNew: false,
     isSale: false,
+    images: {
+      black: [
+        "/placeholder.svg?height=400&width=300&text=Black+Belt+Front",
+        "/placeholder.svg?height=400&width=300&text=Black+Belt+Buckle",
+        "/placeholder.svg?height=400&width=300&text=Black+Belt+Side",
+        "/placeholder.svg?height=400&width=300&text=Black+Belt+Detail",
+      ],
+      brown: [
+        "/placeholder.svg?height=400&width=300&text=Brown+Belt+Front",
+        "/placeholder.svg?height=400&width=300&text=Brown+Belt+Buckle",
+        "/placeholder.svg?height=400&width=300&text=Brown+Belt+Side",
+        "/placeholder.svg?height=400&width=300&text=Brown+Belt+Detail",
+      ],
+    },
   },
   {
     id: 13,
@@ -229,6 +417,20 @@ const products = [
     sizes: ["One Size"],
     isNew: false,
     isSale: true,
+    images: {
+      white: [
+        "/placeholder.svg?height=400&width=300&text=White+Pearl+Earrings+Front",
+        "/placeholder.svg?height=400&width=300&text=White+Pearl+Earrings+Side",
+        "/placeholder.svg?height=400&width=300&text=White+Pearl+Earrings+Worn",
+        "/placeholder.svg?height=400&width=300&text=White+Pearl+Earrings+Detail",
+      ],
+      cream: [
+        "/placeholder.svg?height=400&width=300&text=Cream+Pearl+Earrings+Front",
+        "/placeholder.svg?height=400&width=300&text=Cream+Pearl+Earrings+Side",
+        "/placeholder.svg?height=400&width=300&text=Cream+Pearl+Earrings+Worn",
+        "/placeholder.svg?height=400&width=300&text=Cream+Pearl+Earrings+Detail",
+      ],
+    },
   },
   {
     id: 14,
@@ -243,6 +445,26 @@ const products = [
     sizes: ["One Size"],
     isNew: true,
     isSale: false,
+    images: {
+      black: [
+        "/placeholder.svg?height=400&width=300&text=Black+Sports+Watch+Front",
+        "/placeholder.svg?height=400&width=300&text=Black+Sports+Watch+Side",
+        "/placeholder.svg?height=400&width=300&text=Black+Sports+Watch+Back",
+        "/placeholder.svg?height=400&width=300&text=Black+Sports+Watch+Detail",
+      ],
+      blue: [
+        "/placeholder.svg?height=400&width=300&text=Blue+Sports+Watch+Front",
+        "/placeholder.svg?height=400&width=300&text=Blue+Sports+Watch+Side",
+        "/placeholder.svg?height=400&width=300&text=Blue+Sports+Watch+Back",
+        "/placeholder.svg?height=400&width=300&text=Blue+Sports+Watch+Detail",
+      ],
+      silver: [
+        "/placeholder.svg?height=400&width=300&text=Silver+Sports+Watch+Front",
+        "/placeholder.svg?height=400&width=300&text=Silver+Sports+Watch+Side",
+        "/placeholder.svg?height=400&width=300&text=Silver+Sports+Watch+Back",
+        "/placeholder.svg?height=400&width=300&text=Silver+Sports+Watch+Detail",
+      ],
+    },
   },
   {
     id: 15,
@@ -258,6 +480,26 @@ const products = [
     sizes: ["One Size"],
     isNew: false,
     isSale: true,
+    images: {
+      black: [
+        "/placeholder.svg?height=400&width=300&text=Black+Handbag+Front",
+        "/placeholder.svg?height=400&width=300&text=Black+Handbag+Side",
+        "/placeholder.svg?height=400&width=300&text=Black+Handbag+Open",
+        "/placeholder.svg?height=400&width=300&text=Black+Handbag+Detail",
+      ],
+      beige: [
+        "/placeholder.svg?height=400&width=300&text=Beige+Handbag+Front",
+        "/placeholder.svg?height=400&width=300&text=Beige+Handbag+Side",
+        "/placeholder.svg?height=400&width=300&text=Beige+Handbag+Open",
+        "/placeholder.svg?height=400&width=300&text=Beige+Handbag+Detail",
+      ],
+      red: [
+        "/placeholder.svg?height=400&width=300&text=Red+Handbag+Front",
+        "/placeholder.svg?height=400&width=300&text=Red+Handbag+Side",
+        "/placeholder.svg?height=400&width=300&text=Red+Handbag+Open",
+        "/placeholder.svg?height=400&width=300&text=Red+Handbag+Detail",
+      ],
+    },
   },
 ]
 
@@ -273,6 +515,8 @@ export default function Component() {
   const [cart, setCart] = useState<number[]>([])
   const [showOrderDialog, setShowOrderDialog] = useState(false)
   const [selectedProduct, setSelectedProduct] = useState<any>(null)
+  const [showProductPreview, setShowProductPreview] = useState(false)
+  const [previewProduct, setPreviewProduct] = useState<any>(null)
   const { toast } = useToast()
   const [showCartFavoritesPage, setShowCartFavoritesPage] = useState(false)
   const [showSizeGuideDialog, setShowSizeGuideDialog] = useState(false)
@@ -304,13 +548,10 @@ export default function Component() {
     }
   })
 
-
   const toggleFavorite = (productId: number) => {
     const isFav = favorites.includes(productId)
     const newFavorites = isFav ? favorites.filter((id) => id !== productId) : [...favorites, productId]
-
     setFavorites(newFavorites)
-
     const product = products.find((p) => p.id === productId)
     toast({
       title: isFav ? "Removed from favorites" : "Added to favorites",
@@ -319,7 +560,43 @@ export default function Component() {
     })
   }
 
+  function ProductImageSlider({ product, isPreview = false }: { product: any; isPreview?: boolean }) {
+    const [selectedColor, setSelectedColor] = useState(product.colors[0]?.toLowerCase().replace(/\s+/g, "") || "black")
+    const [currentImageIndex, setCurrentImageIndex] = useState(0)
+
     const currentImages = product.images?.[selectedColor] || [product.image]
+
+    const getColorBackground = (color: string) => {
+      const colorMap: { [key: string]: string } = {
+        black: "bg-black",
+        white: "bg-white",
+        navy: "bg-blue-900",
+        blue: "bg-blue-600",
+        "light blue": "bg-blue-400",
+        "dark blue": "bg-blue-800",
+        turquoise: "bg-cyan-500",
+        cream: "bg-yellow-100",
+        grey: "bg-gray-500",
+        gray: "bg-gray-500",
+        camel: "bg-yellow-600",
+        burgundy: "bg-red-900",
+        olive: "bg-green-700",
+        pink: "bg-pink-400",
+        "floral pink": "bg-gradient-to-r from-pink-200 to-purple-200",
+        "floral blue": "bg-gradient-to-r from-blue-200 to-indigo-200",
+        silver: "bg-gray-300",
+        gold: "bg-yellow-500",
+        "rose gold": "bg-pink-300",
+        brown: "bg-amber-700",
+        tan: "bg-amber-600",
+        beige: "bg-amber-200",
+        red: "bg-red-600",
+        floral: "bg-gradient-to-r from-pink-200 to-purple-200",
+        geometric: "bg-gradient-to-r from-blue-200 to-green-200",
+        solid: "bg-gray-400",
+      }
+      return colorMap[color.toLowerCase()] || "bg-gray-400"
+    }
 
     const nextImage = () => {
       setCurrentImageIndex((prev) => (prev + 1) % currentImages.length)
@@ -359,32 +636,84 @@ export default function Component() {
                 <ChevronRight className="h-4 w-4" />
               </Button>
             </>
-       
           )}
-         
-  const handleAddToCart = (product: any) => {
-    setSelectedProduct(product)
-    setShowOrderDialog(true)
 
+          {/* Image Counter */}
+          {currentImages.length > 1 && (
+            <div className="absolute bottom-2 right-2 bg-black/50 text-white px-2 py-1 rounded text-xs">
+              {currentImageIndex + 1} / {currentImages.length}
+            </div>
+          )}
+
+          <div className="absolute top-3 left-3 flex gap-2">
+            {product.isNew && <Badge className="bg-green-500 hover:bg-green-600">New</Badge>}
+            {product.isSale && <Badge className="bg-red-500 hover:bg-red-600">Sale</Badge>}
+          </div>
+        </div>
+
+        {/* Thumbnail Images */}
+        {currentImages.length > 1 && (
+          <div className="grid grid-cols-4 gap-2">
+            {currentImages.map((image: string, index: number) => (
+              <button
+                key={index}
+                onClick={() => setCurrentImageIndex(index)}
+                className={`relative overflow-hidden rounded-lg border-2 transition-all ${
+                  currentImageIndex === index ? "border-black" : "border-gray-200 hover:border-gray-400"
+                }`}
+              >
+                <img src={image || product.image} alt={`Thumbnail ${index + 1}`} className="w-full h-16 object-cover" />
+              </button>
+            ))}
+          </div>
+        )}
+
+        {/* Color Selector */}
+        {product.colors && product.colors.length > 1 && (
+          <div>
+            <h4 className="font-semibold mb-3">Color</h4>
+            <div className="flex gap-3 flex-wrap">
+              {product.colors.map((color: string) => (
+                <button
+                  key={color}
+                  onClick={() => {
+                    setSelectedColor(color.toLowerCase().replace(/\s+/g, ""))
+                    setCurrentImageIndex(0)
+                  }}
+                  className={`w-8 h-8 rounded-full border-2 transition-all ${getColorBackground(color)} ${
+                    selectedColor === color.toLowerCase().replace(/\s+/g, "")
+                      ? "border-gray-600 ring-2 ring-gray-300"
+                      : "border-gray-300 hover:border-gray-600"
+                  }`}
+                  title={color}
+                />
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    )
+  }
+
+  const handleAddToCart = (product: any) => {
+    // Only add to cart if not already present
     if (!cart.includes(product.id)) {
-      setCart([...cart, product.id])
+      setCart((prev) => [...prev, product.id])
       toast({
         title: "Added to cart",
         description: product.name,
         duration: 2000,
       })
     }
-    setCart((prev) => {
-      if (!prev.includes(product.id)) {
-        toast({
-          title: "Added to cart",
-          description: product.name,
-          duration: 2000,
-        })
-        return [...prev, product.id]
-      }
-      return prev
-    })
+
+    // Set the selected product and show order dialog
+    setSelectedProduct(product)
+    setShowOrderDialog(true)
+  }
+
+  const handleProductClick = (product: any) => {
+    setPreviewProduct(product)
+    setShowProductPreview(true)
   }
 
   const getWhatsAppDetails = (category: string) => {
@@ -573,85 +902,121 @@ export default function Component() {
         </div>
       </header>
 
- {/* Hero Section */}
-<section className="relative overflow-hidden">
-  {/* Desktop Banner */}
-  <div className="hidden md:block relative">
-    <img
-      src="/Jwela Website Header (1).jpg"
-      alt="Fashion Banner"
-      className="w-full h-auto max-h-[500px] object-contain"
-    />
-
-    {/* Optional overlay for better text readability if needed */}
-    <div className="absolute inset-0 bg-black/10"></div>
-
-    {/* Content positioned over the banner */}
-    <div className="absolute inset-0 flex items-center justify-center">
-      <div className="container mx-auto px-4">
-        <div className="text-center text-white">
-           <h2 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg"></h2>
-          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md opacity-90">
-          </p>
-          <Button size="lg" className="px-8 bg-white text-black hover:bg-gray-100 font-semibold">
-            Shop Now
-          </Button>
+      {/* Hero Section */}
+      <section className="relative overflow-hidden">
+        {/* Desktop Banner */}
+        <div className="hidden md:block relative">
+          <img
+            src="/Jwela Website Header (1).jpg"
+            alt="Fashion Banner"
+            className="w-full h-auto max-h-[500px] object-contain"
+          />
+          {/* Optional overlay for better text readability if needed */}
+          <div className="absolute inset-0 bg-black/10"></div>
+          {/* Content positioned over the banner */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="container mx-auto px-4">
+              <div className="text-center text-white">
+                <h2 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg"></h2>
+                <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md opacity-90"></p>
+                <Button size="lg" className="px-8 bg-white text-black hover:bg-gray-100 font-semibold">
+                  Shop Now
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  {/* Mobile Banner */}
-  <div className="md:hidden relative">
-    <img
-      src="/Jwela Website Header (1).jpg"
-      alt="Fashion Banner"
-      className="w-full h-auto object-contain"
-    />
-
-    {/* Stronger overlay for mobile readability */}
-    <div className="absolute inset-0 bg-black/30"></div>
-
-    {/* Mobile Content */}
-    <div className="absolute inset-0 flex items-center justify-center">
-      <div className="container mx-auto px-4">
-        <div className="text-center text-white">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-3 drop-shadow-lg"></h2>
-          <p className="text-base sm:text-lg mb-6 max-w-sm mx-auto drop-shadow-md opacity-90">
-          </p>
-          <Button size="default" className="px-6 bg-white text-black hover:bg-gray-100 font-semibold">
-            Shop Now
-          </Button>
+        {/* Mobile Banner */}
+        <div className="md:hidden relative">
+          <img src="/Jwela Website Header (1).jpg" alt="Fashion Banner" className="w-full h-auto object-contain" />
+          {/* Stronger overlay for mobile readability */}
+          <div className="absolute inset-0 bg-black/30"></div>
+          {/* Mobile Content */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="container mx-auto px-4">
+              <div className="text-center text-white">
+                <h2 className="text-2xl sm:text-3xl font-bold mb-3 drop-shadow-lg"></h2>
+                <p className="text-base sm:text-lg mb-6 max-w-sm mx-auto drop-shadow-md opacity-90"></p>
+                <Button size="default" className="px-6 bg-white text-black hover:bg-gray-100 font-semibold">
+                  Shop Now
+                </Button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
-      {/* 🆕 NEW SECTION ADDED HERE 🆕 */}
+      {/* Product Showcase Section */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Product</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Explore our signature piece in multiple styles and colors
+          </p>
+        </div>
 
-    {/* Product Showcase Section */}
-<section className="container mx-auto px-4 py-16">
-  <div className="text-center mb-12">
-    <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Product</h2>
-    <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-      Explore our signature piece in multiple styles and colors
-    </p>
-  </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Product Images Slider */}
+          <ProductImageSlider product={products.find((p) => p.id === 1) || products[0]} />
 
-  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-    {/* Product Images Grid */}
-    <div className="grid grid-cols-2 gap-4">
-      // ... 4 product image cards ...
-    </div>
+          {/* Product Details */}
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-2xl md:text-3xl font-bold mb-2">Traditional Agbada - Turquoise</h3>
+              <div className="flex items-center gap-2 mb-4">
+                <div className="flex items-center">
+                  <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                  <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                  <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                  <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                  <Star className="h-5 w-5 text-yellow-400" />
+                  <span className="text-sm text-muted-foreground ml-2">4.5 (128 reviews)</span>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 mb-6">
+                <span className="text-3xl font-bold">₦100,000</span>
+                <Badge className="bg-red-500 hover:bg-red-600">Sale</Badge>
+              </div>
+            </div>
 
-    {/* Product Details */}
-    <div className="space-y-6">
-      // ... product info, colors, sizes, buttons ...
-    </div>
-  </div>
-</section>
-  
+            <div className="space-y-4">
+              <p className="text-muted-foreground">
+                Experience the epitome of African elegance with our Traditional Agbada. Meticulously crafted with
+                premium materials, this timeless attire exudes sophistication and cultural pride.
+              </p>
+
+              <div className="flex gap-4">
+                <Button size="lg" className="flex-1" onClick={() => handleAddToCart(products[0])}>
+                  <ShoppingBag className="h-5 w-5 mr-2" />
+                  Add to Cart
+                </Button>
+                <Button variant="outline" size="lg" onClick={() => toggleFavorite(1)}>
+                  <Heart className={`h-5 w-5 ${favorites.includes(1) ? "fill-red-500 text-red-500" : ""}`} />
+                </Button>
+              </div>
+            </div>
+
+            <div className="border-t pt-6">
+              <div className="grid grid-cols-3 gap-4 text-center">
+                <div>
+                  <div className="font-semibold">Free Shipping</div>
+                  <div className="text-sm text-muted-foreground">On orders over ₦50,000</div>
+                </div>
+                <div>
+                  <div className="font-semibold">Authentic Design</div>
+                  <div className="text-sm text-muted-foreground">Handcrafted</div>
+                </div>
+                <div>
+                  <div className="font-semibold">Cultural Pride</div>
+                  <div className="text-sm text-muted-foreground">Embrace tradition</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Filters and Search */}
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row gap-4 mb-8">
@@ -720,7 +1085,11 @@ export default function Component() {
         {/* Product Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {sortedProducts.map((product) => (
-            <Card key={product.id} className="group cursor-pointer hover:shadow-lg transition-shadow">
+            <Card
+              key={product.id}
+              className="group cursor-pointer hover:shadow-lg transition-shadow"
+              onClick={() => handleProductClick(product)}
+            >
               <CardContent className="p-0">
                 <div className="relative overflow-hidden rounded-t-lg">
                   <img
@@ -763,7 +1132,7 @@ export default function Component() {
                     )}
                   </div>
                   <div className="flex flex-wrap gap-1 mb-3">
-                    {product.colors.slice(0, 3).map((color, index) => (
+                    {product.colors.slice(0, 3).map((color: string, index: number) => (
                       <Badge key={index} variant="secondary" className="text-xs">
                         {color}
                       </Badge>
@@ -774,7 +1143,13 @@ export default function Component() {
                       </Badge>
                     )}
                   </div>
-                  <Button className="w-full" onClick={() => handleAddToCart(product)}>
+                  <Button
+                    className="w-full"
+                    onClick={(e) => {
+                      e.stopPropagation()
+                      handleAddToCart(product)
+                    }}
+                  >
                     Add to Cart
                   </Button>
                 </div>
@@ -790,6 +1165,125 @@ export default function Component() {
         )}
       </div>
 
+      {/* Product Preview Dialog */}
+      <Dialog open={showProductPreview} onOpenChange={setShowProductPreview}>
+        <DialogContent className="sm:max-w-4xl max-h-[90vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle className="flex items-center justify-between">
+              {previewProduct?.name}
+              <Button variant="ghost" size="icon" onClick={() => setShowProductPreview(false)}>
+                <X className="h-4 w-4" />
+              </Button>
+            </DialogTitle>
+          </DialogHeader>
+          {previewProduct && (
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* Product Images Slider */}
+              <ProductImageSlider product={previewProduct} isPreview={true} />
+
+              {/* Product Details */}
+              <div className="space-y-6">
+                <div>
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="flex items-center">
+                      <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+                      <span className="text-sm text-muted-foreground ml-2">
+                        {previewProduct.rating} ({previewProduct.reviews} reviews)
+                      </span>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3 mb-6">
+                    <span className="text-3xl font-bold">₦{previewProduct.price.toLocaleString()}</span>
+                    {previewProduct.originalPrice && (
+                      <span className="text-lg text-muted-foreground line-through">
+                        ₦{previewProduct.originalPrice.toLocaleString()}
+                      </span>
+                    )}
+                    {previewProduct.isNew && <Badge className="bg-green-500 hover:bg-green-600">New Arrival</Badge>}
+                    {previewProduct.isSale && <Badge className="bg-red-500 hover:bg-red-600">Sale</Badge>}
+                  </div>
+                </div>
+
+                {/* Available Colors */}
+                {previewProduct.colors && previewProduct.colors.length > 0 && (
+                  <div>
+                    <h4 className="font-semibold mb-3">Available Colors</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {previewProduct.colors.map((color: string, index: number) => (
+                        <Badge key={index} variant="secondary" className="text-sm">
+                          {color}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Available Sizes */}
+                {previewProduct.sizes && previewProduct.sizes.length > 0 && (
+                  <div>
+                    <h4 className="font-semibold mb-3">Available Sizes</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {previewProduct.sizes.map((size: string, index: number) => (
+                        <Badge key={index} variant="outline" className="text-sm">
+                          {size}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                <div className="space-y-4">
+                  <p className="text-muted-foreground">
+                    {previewProduct.category === "Accessories"
+                      ? "Premium quality accessory crafted with attention to detail and style."
+                      : "High-quality apparel designed for comfort, style, and durability."}
+                  </p>
+
+                  <div className="flex gap-4">
+                    <Button
+                      size="lg"
+                      className="flex-1"
+                      onClick={() => {
+                        handleAddToCart(previewProduct)
+                        setShowProductPreview(false)
+                      }}
+                    >
+                      <ShoppingBag className="h-5 w-5 mr-2" />
+                      Add to Cart
+                    </Button>
+                    <Button
+                      variant="outline"
+                      size="lg"
+                      onClick={(e) => {
+                        e.stopPropagation()
+                        toggleFavorite(previewProduct.id)
+                      }}
+                    >
+                      <Heart
+                        className={`h-5 w-5 ${favorites.includes(previewProduct.id) ? "fill-red-500 text-red-500" : ""}`}
+                      />
+                    </Button>
+                  </div>
+                </div>
+
+                <div className="border-t pt-6">
+                  <div className="grid grid-cols-2 gap-4 text-center">
+                    <div>
+                      <div className="font-semibold">Free Shipping</div>
+                      <div className="text-sm text-muted-foreground">On orders over ₦50,000</div>
+                    </div>
+                    <div>
+                      <div className="font-semibold">Quality Guarantee</div>
+                      <div className="text-sm text-muted-foreground">Premium materials</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
+
       {/* Order Dialog */}
       <Dialog open={showOrderDialog} onOpenChange={setShowOrderDialog}>
         <DialogContent className="sm:max-w-md max-h-[90vh] overflow-y-auto">
@@ -804,7 +1298,6 @@ export default function Component() {
               Contact us on WhatsApp to complete your order and discuss delivery details
             </DialogDescription>
           </DialogHeader>
-
           {selectedProduct && (
             <div className="space-y-4">
               <div className="flex items-center gap-4 p-4 bg-slate-50 rounded-lg">
@@ -818,7 +1311,6 @@ export default function Component() {
                   <p className="text-lg font-bold text-green-600">₦{selectedProduct.price.toLocaleString()}</p>
                 </div>
               </div>
-
               <div className="bg-blue-50 p-3 rounded-lg border border-blue-200">
                 <h4 className="font-semibold text-blue-800 mb-2 text-sm">Why WhatsApp?</h4>
                 <ul className="text-xs text-blue-700 space-y-1">
@@ -827,7 +1319,6 @@ export default function Component() {
                   <li>• Personalized customer service & order tracking</li>
                 </ul>
               </div>
-
               <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-3 rounded-lg border border-green-200">
                 <div className="flex items-center gap-2 mb-2">
                   <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
@@ -878,7 +1369,6 @@ Thank you!`
                   </Button>
                 </div>
               </div>
-
               <div className="bg-gradient-to-r from-pink-50 to-purple-50 p-3 rounded-lg border border-pink-200">
                 <div className="flex items-center gap-2 mb-2">
                   <Instagram className="h-4 w-4 text-pink-600" />
@@ -908,7 +1398,6 @@ Thank you!`
                   </Button>
                 </div>
               </div>
-
               <div className="bg-yellow-50 p-3 rounded-lg border border-yellow-200">
                 <p className="text-xs text-yellow-800">
                   <strong>Order Process:</strong>
@@ -924,7 +1413,6 @@ Thank you!`
                   5. Receive confirmation and tracking info
                 </p>
               </div>
-
               <div className="flex gap-2">
                 <Button
                   className="flex-1 bg-green-500 hover:bg-green-600"
@@ -969,12 +1457,10 @@ Thank you!`
             </DialogTitle>
             <DialogDescription>Find your perfect fit with our comprehensive size guide</DialogDescription>
           </DialogHeader>
-
           <div className="space-y-6">
             {/* Clothing Sizes */}
             <div>
               <h3 className="text-lg font-semibold mb-4">Clothing Sizes</h3>
-
               {/* Women's Clothing */}
               <div className="mb-6">
                 <h4 className="font-medium mb-3 text-pink-600">Women's Clothing</h4>
@@ -1029,7 +1515,6 @@ Thank you!`
                   </table>
                 </div>
               </div>
-
               {/* Men's Clothing */}
               <div className="mb-6">
                 <h4 className="font-medium mb-3 text-blue-600">Men's Clothing</h4>
@@ -1079,11 +1564,9 @@ Thank you!`
                 </div>
               </div>
             </div>
-
             {/* Accessories Sizes */}
             <div>
               <h3 className="text-lg font-semibold mb-4">Accessories</h3>
-
               {/* Watch Sizes */}
               <div className="mb-4">
                 <h4 className="font-medium mb-3">Watch Sizes</h4>
@@ -1101,7 +1584,6 @@ Thank you!`
                   </p>
                 </div>
               </div>
-
               {/* Belt Sizes */}
               <div className="mb-4">
                 <h4 className="font-medium mb-3">Belt Sizes</h4>
@@ -1145,7 +1627,6 @@ Thank you!`
                 </div>
               </div>
             </div>
-
             {/* Measurement Tips */}
             <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
               <h4 className="font-medium mb-2 text-yellow-800">How to Measure</h4>
@@ -1164,7 +1645,6 @@ Thank you!`
                 </p>
               </div>
             </div>
-
             {/* Contact for Help */}
             <div className="bg-green-50 p-4 rounded-lg border border-green-200">
               <h4 className="font-medium mb-2 text-green-800">Need Help with Sizing?</h4>
