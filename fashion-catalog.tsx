@@ -360,34 +360,6 @@ export default function Component() {
               </Button>
             </>
        
-        )}
-
-        {/* Color Selector */}
-        {product.colors && product.colors.length > 1 && (
-          <div>
-            <h4 className="font-semibold mb-3">Color</h4>
-            <div className="flex gap-3 flex-wrap">
-              {product.colors.map((color) => (
-                <button
-                  key={color}
-                  onClick={() => {
-                    setSelectedColor(color.toLowerCase().replace(/\s+/g, ""))
-                    setCurrentImageIndex(0)
-                  }}
-                  className={`w-8 h-8 rounded-full border-2 transition-all ${getColorBackground(color)} ${
-                    selectedColor === color.toLowerCase().replace(/\s+/g, "")
-                      ? "border-gray-600 ring-2 ring-gray-300"
-                      : "border-gray-300 hover:border-gray-600"
-                  }`}
-                  title={color}
-                />
-              ))}
-            </div>
-          </div>
-        )}
-      </div>
-    )
-  }
           )}
          
   const handleAddToCart = (product: any) => {
