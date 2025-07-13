@@ -395,21 +395,7 @@ export default function Component() {
                 <ChevronRight className="h-4 w-4" />
               </Button>
             </>
-         {/* Thumbnail Images */}
-        {currentImages.length > 1 && (
-          <div className="grid grid-cols-4 gap-2">
-            {currentImages.map((image, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentImageIndex(index)}
-                className={`relative overflow-hidden rounded-lg border-2 transition-all ${
-                  currentImageIndex === index ? "border-black" : "border-gray-200 hover:border-gray-400"
-                }`}
-              >
-                <img src={image || product.image} alt={`Thumbnail ${index + 1}`} className="w-full h-16 object-cover" />
-              </button>
-            ))}
-          </div>
+       
         )}
 
         {/* Color Selector */}
