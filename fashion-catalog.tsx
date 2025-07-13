@@ -35,6 +35,17 @@ const products = [
     sizes: ["M", "L", "XL", "XXL"],
     isNew: false,
     isSale: true,
+    images: {
+      turquoise: [
+        "/images/jwela-agbada.jpg",
+      ],
+      navy: [
+        "/placeholder.svg?height=400&width=300&text=Navy+Agbada+Front",
+      ],
+      white: [
+        "/placeholder.svg?height=400&width=300&text=White+Agbada+Front",       
+      ],
+    },
   },
   {
     id: 2,
@@ -92,6 +103,17 @@ const products = [
     sizes: ["One Size"],
     isNew: true,
     isSale: false,
+       images: {
+      Black: [
+        "/images/jwela-agbada.jpg",
+      ],
+      Silver: [
+        "/placeholder.svg?height=400&width=300&text=Navy+Agbada+Front",
+      ],
+      Gold: [
+        "/placeholder.svg?height=400&width=300&text=White+Agbada+Front",       
+      ],
+    },
   },
   {
     id: 6,
@@ -282,6 +304,7 @@ export default function Component() {
     }
   })
 
+
   const toggleFavorite = (productId: number) => {
     const isFav = favorites.includes(productId)
     const newFavorites = isFav ? favorites.filter((id) => id !== productId) : [...favorites, productId]
@@ -296,6 +319,127 @@ export default function Component() {
     })
   }
 
+  function ProductImageSlider({ product, isPreview = false }) {
+    const [selectedColor, setSelectedColor] = useState(product.colors[0]?.toLowerCase().replace(/\s+/g, "") || "black")
+    const [currentImageIndex, setCurrentImageIndex] = useState(0)
+
+    const currentImages = product.images?.[selectedColor] || [product.image]
+
+    const getColorBackground = (color) => {
+      const colorMap = {
+        black: "bg-black",
+        white: "bg-white",
+        navy: "bg-blue-900",
+        blue: "bg-blue-600",
+        "light blue": "bg-blue-400",
+        "dark blue": "bg-blue-800",
+        turquoise: "bg-cyan-500",
+        cream: "bg-yellow-100",
+        grey: "bg-gray-500",
+        gray: "bg-gray-500",
+        camel: "bg-yellow-600",
+        burgundy: "bg-red-900",
+        olive: "bg-green-700",
+        pink: "bg-pink-400",
+        "floral pink": "bg-gradient-to-r from-pink-200 to-purple-200",
+        "floral blue": "bg-gradient-to-r from-blue-200 to-indigo-200",
+        silver: "bg-gray-300",
+        gold: "bg-yellow-500",
+        "rose gold": "bg-pink-300",
+        brown: "bg-amber-700",
+        tan: "bg-amber-600",
+        beige: "bg-amber-200",
+        red: "bg-red-600",
+        floral: "bg-gradient-to-r from-pink-200 to-purple-200",
+        geometric: "bg-gradient-to-r from-blue-200 to-green-200",
+        solid: "bg-gray-400",
+      }
+      return colorMap[color.toLowerCase()] || "bg-gray-400"
+    }
+
+    const nextImage = () => {
+      setCurrentImageIndex((prev) => (prev + 1) % currentImages.length)
+    }
+
+    const prevImage = () => {
+      setCurrentImageIndex((prev) => (prev - 1 + currentImages.length) % currentImages.length)
+    }
+
+    return (
+      <div className="space-y-4">
+        {/* Main Image */}
+        <div className="relative overflow-hidden rounded-lg">
+          <img
+            src={currentImages[currentImageIndex] || product.image}
+            alt={`${product.name} - ${selectedColor}`}
+            className={`w-full object-cover ${isPreview ? "h-96" : "h-80"}`}
+          />
+
+          {/* Navigation Arrows */}
+          {currentImages.length > 1 && (
+            <>
+              <Button
+                size="icon"
+                variant="secondary"
+                className="absolute left-2 top-1/2 transform -translate-y-1/2 opacity-80 hover:opacity-100"
+                onClick={prevImage}
+              >
+                <ChevronLeft className="h-4 w-4" />
+              </Button>
+              <Button
+                size="icon"
+                variant="secondary"
+                className="absolute right-2 top-1/2 transform -translate-y-1/2 opacity-80 hover:opacity-100"
+                onClick={nextImage}
+              >
+                <ChevronRight className="h-4 w-4" />
+              </Button>
+            </>
+         {/* Thumbnail Images */}
+        {currentImages.length > 1 && (
+          <div className="grid grid-cols-4 gap-2">
+            {currentImages.map((image, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentImageIndex(index)}
+                className={`relative overflow-hidden rounded-lg border-2 transition-all ${
+                  currentImageIndex === index ? "border-black" : "border-gray-200 hover:border-gray-400"
+                }`}
+              >
+                <img src={image || product.image} alt={`Thumbnail ${index + 1}`} className="w-full h-16 object-cover" />
+              </button>
+            ))}
+          </div>
+        )}
+
+        {/* Color Selector */}
+        {product.colors && product.colors.length > 1 && (
+          <div>
+            <h4 className="font-semibold mb-3">Color</h4>
+            <div className="flex gap-3 flex-wrap">
+              {product.colors.map((color) => (
+                <button
+                  key={color}
+                  onClick={() => {
+                    setSelectedColor(color.toLowerCase().replace(/\s+/g, ""))
+                    setCurrentImageIndex(0)
+                  }}
+                  className={`w-8 h-8 rounded-full border-2 transition-all ${getColorBackground(color)} ${
+                    selectedColor === color.toLowerCase().replace(/\s+/g, "")
+                      ? "border-gray-600 ring-2 ring-gray-300"
+                      : "border-gray-300 hover:border-gray-600"
+                  }`}
+                  title={color}
+                />
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    )
+  }
+          )}
+         
   const handleAddToCart = (product: any) => {
     setSelectedProduct(product)
     setShowOrderDialog(true)
@@ -563,11 +707,29 @@ export default function Component() {
 </section>
 
       {/* 🆕 NEW SECTION ADDED HERE 🆕 */}
-{/* Product Showcase Section */}
-<section className="container mx-auto px-4 py-16" />
-  // ... all the new product showcase code ...
+
+    {/* Product Showcase Section */}
+<section className="container mx-auto px-4 py-16">
+  <div className="text-center mb-12">
+    <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Product</h2>
+    <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+      Explore our signature piece in multiple styles and colors
+    </p>
+  </div>
+
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    {/* Product Images Grid */}
+    <div className="grid grid-cols-2 gap-4">
+      // ... 4 product image cards ...
+    </div>
+
+    {/* Product Details */}
+    <div className="space-y-6">
+      // ... product info, colors, sizes, buttons ...
+    </div>
+  </div>
 </section>
-    
+  
       {/* Filters and Search */}
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row gap-4 mb-8">
