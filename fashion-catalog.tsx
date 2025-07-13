@@ -319,43 +319,7 @@ export default function Component() {
     })
   }
 
-  function ProductImageSlider({ product, isPreview = false }) {
-    const [selectedColor, setSelectedColor] = useState(product.colors[0]?.toLowerCase().replace(/\s+/g, "") || "black")
-    const [currentImageIndex, setCurrentImageIndex] = useState(0)
-
     const currentImages = product.images?.[selectedColor] || [product.image]
-
-    const getColorBackground = (color) => {
-      const colorMap = {
-        black: "bg-black",
-        white: "bg-white",
-        navy: "bg-blue-900",
-        blue: "bg-blue-600",
-        "light blue": "bg-blue-400",
-        "dark blue": "bg-blue-800",
-        turquoise: "bg-cyan-500",
-        cream: "bg-yellow-100",
-        grey: "bg-gray-500",
-        gray: "bg-gray-500",
-        camel: "bg-yellow-600",
-        burgundy: "bg-red-900",
-        olive: "bg-green-700",
-        pink: "bg-pink-400",
-        "floral pink": "bg-gradient-to-r from-pink-200 to-purple-200",
-        "floral blue": "bg-gradient-to-r from-blue-200 to-indigo-200",
-        silver: "bg-gray-300",
-        gold: "bg-yellow-500",
-        "rose gold": "bg-pink-300",
-        brown: "bg-amber-700",
-        tan: "bg-amber-600",
-        beige: "bg-amber-200",
-        red: "bg-red-600",
-        floral: "bg-gradient-to-r from-pink-200 to-purple-200",
-        geometric: "bg-gradient-to-r from-blue-200 to-green-200",
-        solid: "bg-gray-400",
-      }
-      return colorMap[color.toLowerCase()] || "bg-gray-400"
-    }
 
     const nextImage = () => {
       setCurrentImageIndex((prev) => (prev + 1) % currentImages.length)
