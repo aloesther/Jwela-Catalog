@@ -135,7 +135,7 @@ const products = [
     gender: "Male",
     image: "/images/G shock B38.jpg",
     rating: 4.8,
-    colors: ["Black", "Gold", "White", "Yellow"],
+    colors: ["Black", "Gold", "White", "Gold"],
     isNew: false,
     isSale: true,
     images: {
@@ -148,7 +148,7 @@ const products = [
       white: [
         "/images/G shock W38.jpg",
       ],
-      yellow: [
+      gold: [
         "/images/G shock Y38.jpg",
       ],
     },
