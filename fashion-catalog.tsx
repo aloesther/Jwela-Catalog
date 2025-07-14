@@ -50,7 +50,7 @@ const products = [
     image: "/images/Casio 14.jpg",
     rating: 4.8,
     reviews: 89,
-    colors: ["Black", "Gold", "Silver],
+    colors: ["Black", "Gold", "Silver"],
     isNew: true,
     isSale: false,
     images: {
@@ -936,7 +936,7 @@ export default function Component() {
                   <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
                   <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
                   <Star className="h-5 w-5 text-yellow-400" />
-                  <span className="text-sm text-muted-foreground ml-2">4.5 (128 reviews)</span>
+                  <span className="text-sm text-muted-foreground ml-2">4.5</span>
                 </div>
               </div>
               <div className="flex items-center gap-3 mb-6">
@@ -948,7 +948,7 @@ export default function Component() {
             <div className="space-y-4">
               <p className="text-muted-foreground">
                 Experience the epitome of African elegance with our Traditional Agbada. Meticulously crafted with
-                premium materials, this timeless attire exudes sophistication and cultural pride.
+                premium materials.
               </p>
 
               <div className="flex gap-4">
@@ -965,8 +965,8 @@ export default function Component() {
             <div className="border-t pt-6">
               <div className="grid grid-cols-3 gap-4 text-center">
                 <div>
-                  <div className="font-semibold">Free Shipping</div>
-                  <div className="text-sm text-muted-foreground">On orders over ₦50,000</div>
+                  <div className="font-semibold">Perfect fit</div>
+                  <div className="text-sm text-muted-foreground">Well tailored</div>
                 </div>
                 <div>
                   <div className="font-semibold">Authentic Design</div>
