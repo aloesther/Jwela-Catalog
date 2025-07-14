@@ -281,7 +281,7 @@ const products = [
          ],
       gold: [
         "/images/Poedagar R25.jpg",
-        "/images/Poedagar Rs25.jpg": ,
+        "/images/Poedagar Rs25.jpg",
       ],
     },
   },
