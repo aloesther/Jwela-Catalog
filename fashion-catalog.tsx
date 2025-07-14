@@ -62,6 +62,7 @@ const products = [
     id: 3,
     name: "Casio Illuminator",
     price: 25000,
+    originalPrice: 30000,
     category: "Accessories",
     gender: "Unisex",
     image: "/images/Casio Illuminator - 25.jpg",
@@ -85,7 +86,6 @@ const products = [
     id: 4,
     name: "/images/Curren 45.jpg",
     price: 40000,
-    originalPrice: 45000,
     category: "Accessories",
     gender: "Male",
     image: "/images/Curren 45.jpg",
@@ -135,7 +135,7 @@ const products = [
     gender: "Male",
     image: "/images/G shock B38.jpg",
     rating: 4.8,
-    colors: ["Black", "Gold", "White", "Yellow],
+    colors: ["Black", "Gold", "White", "Yellow"],
     isNew: false,
     isSale: true,
     images: {
@@ -233,7 +233,7 @@ const products = [
   },
   {
     id: 11,
-    name: Patex Philippe -",
+    name: "Patex Philippe -",
     price: 25000,
     category: "Accessories",
     gender: "Male",
