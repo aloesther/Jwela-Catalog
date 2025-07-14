@@ -60,7 +60,7 @@ const products = [
   },
   {
     id: 3,
-    name: "Casio Illuminator",
+    name: "Casio Illuminator Wristwatch",
     price: 25000,
     originalPrice: 30000,
     category: "Accessories",
@@ -84,7 +84,7 @@ const products = [
   },
   {
     id: 4,
-    name: "/images/Curren 45.jpg",
+    name: "Curren Wristwatch",
     price: 40000,
     category: "Accessories",
     gender: "Male",
@@ -110,7 +110,7 @@ const products = [
   },
   {
     id: 5,
-    name: "Daniel Wellinton",
+    name: "Daniel Wellinton Wristwatch",
     price: 15000,
     category: "Accessories",
     gender: "Male",
@@ -128,7 +128,7 @@ const products = [
   },
   {
     id: 6,
-    name: "G shock",
+    name: "G shock Wristwatch",
     price: 38000,
     originalPrice: 40000,
     category: "Accessories",
@@ -147,15 +147,13 @@ const products = [
       ],
       white: [
         "/images/G shock W38.jpg",
-      ],
-      gold: [
-        "/images/G shock Y38.jpg",
+    
       ],
     },
   },
   {
     id: 7,
-    name: "Keep moving",
+    name: "Keep moving Wristwatch",
     price: 10000,
     category: "Accessories",
     gender: "Female",
@@ -172,7 +170,7 @@ const products = [
   },
   {
     id: 8,
-    name: "Leather Peodagar",
+    name: "Leather Peodagar Wristwatch",
     price: 25000,
     category: "Accessories",
     gender: "Male",
@@ -195,7 +193,7 @@ const products = [
   },
   {
     id: 9,
-    name: "Montblanc",
+    name: "Montblanc Wristwatch",
     price: 10000,
     originalPrice: 15000,
     category: "Accessories",
@@ -213,7 +211,7 @@ const products = [
   },
   {
     id: 10,
-    name: "/images/Patek Philippe 24.jpg",
+    name: "Patek Philippe Wristwatch",
     price: 24000,
     category: "Accessories",
     gender: "Male",
@@ -233,7 +231,7 @@ const products = [
   },
   {
     id: 11,
-    name: "Patex Philippe -",
+    name: "Patex Philippe Wristwatch",
     price: 25000,
     category: "Accessories",
     gender: "Male",
@@ -259,7 +257,7 @@ const products = [
   },
   {
     id: 12,
-    name: "Poedagar",
+    name: "Poedagar Wristwatch",
     price: 25000,
     category: "Accessories",
     gender: "Male",
@@ -274,7 +272,7 @@ const products = [
         "/images/Poedagar 25.jpg" ,
         "/images/Poedagar S25.jpg" ,
         "/images/Poedagar ss25.jpg" ,
-        "public/images/Poedagar sss25.jpg" ,
+        "/images/Poedagar sss25.jpg" ,
       ],
       black: [
         "/images/Poedagar B25.jpg",
@@ -287,12 +285,12 @@ const products = [
   },
   {
     id: 13,
-    name: "public/images/Promade Br17.jpg",
+    name: "Promade Wristwatch",
     price: 30000,
     originalPrice: 17000,
     category: "Accessories",
-    gender: "Female",
-    image: "public/images/Promade Br17.jpg",
+    gender: "Male",
+    image: "/images/Promade Br17.jpg",
     rating: 4.8,
     colors: ["Brown"],
     isNew: false,
@@ -305,7 +303,7 @@ const products = [
   },
 ]
 
-const categories = ["All", "Tops", "Bottoms", "Dresses", "Outerwear", "Accessories"]
+const categories = ["All", "Dresses", "Pants", "Kaftan", "Agbada", "Accessories"]
 const genderFilters = ["All", "Male", "Female", "Unisex"]
 
 export default function Component() {
@@ -1071,8 +1069,8 @@ export default function Component() {
                 <div className="border-t pt-6">
                   <div className="grid grid-cols-2 gap-4 text-center">
                     <div>
-                      <div className="font-semibold">Free Shipping</div>
-                      <div className="text-sm text-muted-foreground">On orders over ₦50,000</div>
+                      <div className="font-semibold">Smooth delivery</div>
+                      <div className="text-sm text-muted-foreground">confirm prices upon purchase</div>
                     </div>
                     <div>
                       <div className="font-semibold">Quality Guarantee</div>
