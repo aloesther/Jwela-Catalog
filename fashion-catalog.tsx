@@ -286,18 +286,18 @@ const products = [
   {
     id: 13,
     name: "Promade Wristwatch",
-    price: 30000,
-    originalPrice: 17000,
+    price: 17000,
+    originalPrice: 20000,
     category: "Accessories",
     gender: "Male",
-    image: "/images/Promade Br17.jpg",
+    image: "/images/Promade Br17.jpg",
     rating: 4.8,
     colors: ["Brown"],
     isNew: false,
     isSale: true,
     images: {
       brown: [
-        "/images/Promade Br17.jpg",
+        "/images/Promade Br17.jpg",
       ],
     },
   },
