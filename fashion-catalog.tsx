@@ -297,7 +297,7 @@ const products = [
     isSale: true,
     images: {
       brown: [
-        "public/images/Promade Br17.jpg",
+        "/images/Promade Br17.jpg",
       ],
     },
   },
