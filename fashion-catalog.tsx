@@ -24,8 +24,7 @@ const products = [
   {
     id: 1,
     name: "Traditional Agbada - Turquoise",
-    price: 100000,
-    originalPrice: 120000,
+    price: 120000,
     category: "Dresses",
     gender: "Male",
     image: "/images/jwela-agbada.jpg",
@@ -33,7 +32,7 @@ const products = [
     colors: ["Turquoise"],
     sizes: ["M", "L", "XL", "XXL"],
     isNew: false,
-    isSale: true,
+    isSale: false,
     images: {
       turquoise: [
         "/images/jwela-agbada.jpg",
@@ -257,34 +256,61 @@ const products = [
   },
   {
     id: 12,
-    name: "Poedagar Wristwatch",
+    name: "Poedagar Wristwatch - 001",
     price: 25000,
     category: "Accessories",
     gender: "Male",
     image: "/images/Poedagar .25.jpg",
     rating: 4.6,
-    colors: ["Silver" , "Black", "Gold"],
+    colors: ["Silver"],
     isNew: false,
     isSale: false,
     images: {
       silver: [
         "/images/Poedagar .25.jpg",
-        "/images/Poedagar 25.jpg" ,
-        "/images/Poedagar S25.jpg" ,
-        "/images/Poedagar ss25.jpg" ,
-        "/images/Poedagar sss25.jpg" ,
-      ],
-      black: [
-        "/images/Poedagar B25.jpg",
-         ],
-      gold: [
-        "/images/Poedagar R25.jpg",
-        "/images/Poedagar Rs25.jpg",
       ],
     },
   },
-  {
+    {
     id: 13,
+    name: "Poedagar Wristwatch - 002",
+    price: 25000,
+    category: "Accessories",
+    gender: "Male",
+    image: "/images/Poedagar S25.jpg",
+    rating: 4.8,
+    colors: ["Black", "Gold"],
+    isNew: false,
+    isSale: false,
+    images: {
+      black: ["images/Poedagar B25.jpg"
+              ],
+      gold: [
+        "/images/Poedagar R25.jpg",
+      ],
+    },
+  },
+   {
+    id: 14,
+    name: "Poedagar Wristwatch - 003",
+    price: 25000,
+    category: "Accessories",
+    gender: "Male",
+    image: "/images/Poedagar 25.jpg",
+    rating: 4.8,
+    colors: ["Silver", "Gold"],
+    isNew: false,
+    isSale: false,
+    images: {
+      silver: [ "/images/Poedagar ss25.jpg" ,
+        "/images/Poedagar sss25.jpg" ,
+              ],
+        gold: ["/images/Poedagar Rs25.jpg"
+        ],
+    },
+  },
+  {
+    id: 15,
     name: "Promade Wristwatch",
     price: 17000,
     originalPrice: 20000,
@@ -298,6 +324,174 @@ const products = [
     images: {
       brown: [
         "/images/Promade Br17.jpg",
+      ],
+    },
+  },
+    {
+    id: 16,
+    name: "Black Unisex Bomber jacket",
+    price: 25000,
+    category: "Dresses",
+    gender: "Unisex",
+    image: "/images/Black Bomber jacket.jpg",
+    rating: 4.5,
+    colors: ["Black"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      black: [
+        "/images/Black Bomber jacket.jpg",
+ 
+      ],
+    },
+  },
+    {
+    id: 17,
+    name: "Africa Print Bomber jacket",
+    price: 20000,
+    category: "Dresses",
+    gender: "Unisex",
+    image: "/images/Bomber jacket - .jpg",
+    rating: 4.5,
+    colors: ["Red", "Green"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: true,
+    images: {
+      Green: [
+        "/images/Bomber jacket - G.jpg",
+        ]
+        Red: [ "/images/Bomber jacket - R.jpg"
+              ]
+      ],
+    },
+  },
+    {
+    id: 18,
+    name: "Black kaftan with embroidery",
+    price: 60000,
+    category: "Dresses",
+    gender: "Male",
+    image: "/images/Black kaftan.jpg",
+    rating: 4.5,
+    colors: ["Black"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      black: [
+        "/images/Black kaftan.jpg",
+      ],
+    },
+  },
+    {
+    id: 19,
+    name: "Blue Kaftan with embroidery",
+    price: 60000,
+    category: "Dresses",
+    gender: "Male",
+    image: "/images/Blue Kaftan.jpg",
+    rating: 4.5,
+    colors: ["Blue"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      blue: [
+        "/images/Blue Kaftan.jpg",
+        "/images/Blue kaftan (2).jpg"
+      ],
+    },
+  },
+    {
+    id: 20,
+    name: "Blue kaftan with black sleeve",
+    price: 50000,
+    category: "Dresses",
+    gender: "Male",
+    image: "/images/Blue and black kaftan.jpg",
+    rating: 4.5,
+    colors: ["Blue"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      blue: [
+        "/images/jwela-agbada.jpg",
+      ],
+    },
+  },
+         {
+    id: 21,
+    name: "Blue complete Agbada",
+    price: 120000,
+    category: "Agbada",
+    gender: "Male",
+    image: "/images/Blue complete agbaada.jpg",
+    rating: 4.5,
+    colors: ["Blue"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      blue: [
+        "/images/Blue complete agbaada.jpg",
+      ],
+    },
+  },
+         {
+    id: 22,
+    name: "Carton color complete Agbada",
+    price: 150000,
+    category: "Agbada",
+    gender: "Male",
+    image: "/images/Carton color complete agbada set.jpg",
+    rating: 4.5,
+    colors: ["Carton"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      brown: [
+        "/images/Carton color complete agbada set.jpg" ,
+      ],
+    },
+  },
+         {
+    id: 23,
+    name: "Green complete Agbada",
+    price: 150000,
+    category: "Agbada",
+    gender: "Male",
+    image: "/images/Green Agbada.jpg",
+    rating: 4.5,
+    colors: ["Green"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      green: [
+        "/images/Green Agbada.jpg" ,
+        "/images/Green Agbada (2).jpg"
+      ],
+    },
+  },
+         {
+    id: 22,
+    name: "Mint green complete Agbada",
+    price: 150000,
+    category: "Agbada",
+    gender: "Male",
+    image: "/images/Mint Green complete Agbada set.jpg",
+    rating: 4.5,
+    colors: ["Green"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      green: [
+        "/images/Mint Green complete Agbada set.jpg" ,
       ],
     },
   },
