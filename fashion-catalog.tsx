@@ -1015,124 +1015,145 @@ return (
   </div>
 )
 
-      {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        {/* Desktop Banner */}
-        <div className="hidden md:block relative">
-          <img
-            src="/Jwela Website Header (1).jpg"
-            alt="Fashion Banner"
-            className="w-full h-auto max-h-[500px] object-contain"
-          />
-          {/* Optional overlay for better text readability if needed */}
-          <div className="absolute inset-0 bg-black/10"></div>
-          {/* Content positioned over the banner */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="container mx-auto px-4">
-              <div className="text-center text-white">
-                <h2 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg"></h2>
-                <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md opacity-90"></p>
-            <Button size="lg" className="px-8 bg-white text-black hover:bg-gray-100 font-semibold">
-           
-          </Button>
+     {/* Hero Section */}
+<section className="relative overflow-hidden">
+  {/* Desktop Banner */}
+  <div className="hidden md:block relative">
+    <img
+      src="/Jwela Website Header (1).jpg"
+      alt="Fashion Banner"
+      className="w-full h-auto max-h-[500px] object-contain"
+    />
+    
+    {/* Optional overlay for better text readability */}
+    <div className="absolute inset-0 bg-black/10"></div>
 
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Mobile Banner */}
-        <div className="md:hidden relative">
-          <img src="/Jwela Website Header (1).jpg" alt="Fashion Banner" className="w-full h-auto object-contain" />
-          {/* Stronger overlay for mobile readability */}
-          <div className="absolute inset-0 bg-black/30"></div>
-          {/* Mobile Content */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="container mx-auto px-4">
-              <div className="text-center text-white">
-                <h2 className="text-2xl sm:text-3xl font-bold mb-3 drop-shadow-lg"></h2>
-                <p className="text-base sm:text-lg mb-6 max-w-sm mx-auto drop-shadow-md opacity-90"></p>
-                <Button size="lg" className="px-8 bg-white text-black hover:bg-gray-100 font-semibold">
-           
-          </Button>
-
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Product Showcase Section */}
-      <section className="container mx-auto px-4 py-16">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Product</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Explore our signature piece in multiple styles and colors
+    {/* Content positioned over the banner */}
+    <div className="absolute inset-0 flex items-center justify-center">
+      <div className="container mx-auto px-4">
+        <div className="text-center text-white">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">
+            Your Style, Your Identity
+          </h2>
+          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md opacity-90">
+            Discover our premium traditional collections
           </p>
+          <Button size="lg" className="px-8 bg-white text-black hover:bg-gray-100 font-semibold">
+            Shop Now
+          </Button>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Product Images Slider */}
-          <ProductImageSlider product={products.find((p) => p.id === 1) || products[0]} />
+      {/* Mobile Banner */}
+<div className="md:hidden relative">
+  <img
+    src="/Jwela Website Header (1).jpg"
+    alt="Fashion Banner"
+    className="w-full h-auto object-contain"
+  />
+  
+  {/* Stronger overlay for mobile readability */}
+  <div className="absolute inset-0 bg-black/30"></div>
 
-          {/* Product Details */}
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-2">Traditional Agbada - Turquoise</h3>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="flex items-center">
-                  <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                  <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                  <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                  <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-                  <Star className="h-5 w-5 text-yellow-400" />
-                  <span className="text-sm text-muted-foreground ml-2">4.5</span>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 mb-6">
-                <span className="text-3xl font-bold">₦100,000</span>
-                <Badge className="bg-red-500 hover:bg-red-600">Sale</Badge>
-              </div>
-            </div>
+  {/* Mobile Content */}
+  <div className="absolute inset-0 flex items-center justify-center">
+    <div className="container mx-auto px-4">
+      <div className="text-center text-white">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-3 drop-shadow-lg">
+          Your Style, On the Go
+        </h2>
+        <p className="text-base sm:text-lg mb-6 max-w-sm mx-auto drop-shadow-md opacity-90">
+          Explore outfits crafted to match your bold identity.
+        </p>
+        <Button size="lg" className="px-8 bg-white text-black hover:bg-gray-100 font-semibold">
+          Explore Now
+        </Button>
+      </div>
+    </div>
+  </div>
+</div>
 
-            <div className="space-y-4">
-              <p className="text-muted-foreground">
-                Experience the epitome of African elegance with our Traditional Agbada. Meticulously crafted with
-                premium materials.
-              </p>
 
-              <div className="flex gap-4">
-                <Button size="lg" className="flex-1" onClick={() => handleAddToCart(products[0])}>
-                  <ShoppingBag className="h-5 w-5 mr-2" />
-                  Add to Cart
-                </Button>
-                <Button variant="outline" size="lg" onClick={() => toggleFavorite(1)}>
-                  <Heart className={`h-5 w-5 ${favorites.includes(1) ? "fill-red-500 text-red-500" : ""}`} />
-                </Button>
-              </div>
-            </div>
+     {/* Product Showcase Section */}
+<section className="container mx-auto px-4 py-16">
+  <div className="text-center mb-12">
+    <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Product</h2>
+    <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+      Explore our signature piece in multiple styles and colors
+    </p>
+  </div>
 
-            <div className="border-t pt-6">
-              <div className="grid grid-cols-3 gap-4 text-center">
-                <div>
-                  <div className="font-semibold">Perfect fit</div>
-                  <div className="text-sm text-muted-foreground">Well tailored</div>
-                </div>
-                <div>
-                  <div className="font-semibold">Authentic Design</div>
-                  <div className="text-sm text-muted-foreground">Handcrafted</div>
-                </div>
-                <div>
-                  <div className="font-semibold">Cultural Pride</div>
-                  <div className="text-sm text-muted-foreground">Embrace tradition</div>
-                </div>
-              </div>
-            </div>
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    {/* Product Images Slider */}
+    <ProductImageSlider product={products.find((p) => p.id === 1) || products[0]} />
+
+    {/* Product Details */}
+    <div className="space-y-6">
+      <div>
+        <h3 className="text-2xl md:text-3xl font-bold mb-2">
+          Traditional Agbada - Turquoise
+        </h3>
+
+        {/* Rating */}
+        <div className="flex items-center gap-2 mb-4">
+          <div className="flex items-center">
+            <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+            <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+            <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+            <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+            <Star className="h-5 w-5 text-yellow-400" />
+            <span className="text-sm text-muted-foreground ml-2">4.5</span>
           </div>
         </div>
-      </section>
+
+        {/* Price */}
+        <div className="flex items-center gap-3 mb-6">
+          <span className="text-3xl font-bold">₦100,000</span>
+          <Badge className="bg-red-500 hover:bg-red-600">Sale</Badge>
+        </div>
+      </div>
+
+      {/* Description & Actions */}
+      <div className="space-y-4">
+        <p className="text-muted-foreground">
+          Experience the epitome of African elegance with our Traditional Agbada. Meticulously crafted with
+          premium materials.
+        </p>
+
+        <div className="flex gap-4">
+          <Button size="lg" className="flex-1" onClick={() => handleAddToCart(products[0])}>
+            <ShoppingBag className="h-5 w-5 mr-2" />
+            Add to Cart
+          </Button>
+          <Button variant="outline" size="lg" onClick={() => toggleFavorite(1)}>
+            <Heart className={`h-5 w-5 ${favorites.includes(1) ? "fill-red-500 text-red-500" : ""}`} />
+          </Button>
+        </div>
+      </div>
+
+      {/* Product Features */}
+      <div className="border-t pt-6">
+        <div className="grid grid-cols-3 gap-4 text-center">
+          <div>
+            <div className="font-semibold">Perfect Fit</div>
+            <div className="text-sm text-muted-foreground">Well tailored</div>
+          </div>
+          <div>
+            <div className="font-semibold">Authentic Design</div>
+            <div className="text-sm text-muted-foreground">Handcrafted</div>
+          </div>
+          <div>
+            <div className="font-semibold">Cultural Pride</div>
+            <div className="text-sm text-muted-foreground">Embrace tradition</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Filters and Search */}
       <div className="container mx-auto px-4 py-8">
