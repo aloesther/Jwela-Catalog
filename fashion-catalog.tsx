@@ -737,21 +737,35 @@ export default function Component() {
     return <CartFavoritesPage initialCart={cart} initialFavorites={favorites} onBack={handleBackToMain} />
   }
 
-  return (
+
+ return (
     <div className="min-h-screen bg-background">
       {/* Header */}
       <header className="border-b">
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
-            <div className="flex items-center">
-              <img src="/images/jwela-logo-clean.png" alt="Jwela" className="h-10 w-auto" />
-            </div>
+            <img src="/images/jwela-logo-clean.png" alt="Jwela" className="h-10 w-auto" />
+            <h1 className="text-3xl font-bold"></h1>
             <div className="flex items-center gap-4">
-             </Button>
-           </div>
-         </div>
-       </div>
-     </header>
+              <Button variant="outline" size="icon">
+                <Heart className="h-4 w-4" />
+                {favorites.length > 0 && (
+                  <Badge className="absolute -top-2 -right-2 h-5 w-5 rounded-full p-0 text-xs">
+                    {favorites.length}
+                  </Badge>
+                )}
+              </Button>
+              <Button variant="outline" size="icon">
+                <ShoppingCart className="h-4 w-4" />
+                {cart.length > 0 && (
+                  <Badge className="absolute -top-2 -right-2 h-5 w-5 rounded-full p-0 text-xs">{cart.length}</Badge>
+                )}
+              </Button>
+            </div>
+          </div>
+        </div>
+      </header>
+  
               {/* Favorites Sheet */}
               <Sheet>
                 <SheetTrigger asChild>
