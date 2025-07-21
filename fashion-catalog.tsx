@@ -1902,7 +1902,7 @@ Thank you!`
                     rel="noopener noreferrer"
                     className="hover:text-pink-600 transition-colors"
                   >
-                    @jwela.apparel (Outfits)
+                   @jwela.apparel (Outfits)
                   </a>
                 </li>
               </ul>
@@ -1915,7 +1915,7 @@ Thank you!`
       </footer>
 
       {/* Toast Notifications */}
-  </Toaster>
+      <Toaster />
     </div>
   )
 }
