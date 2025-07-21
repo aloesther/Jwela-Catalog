@@ -749,7 +749,7 @@ export default function Component() {
             </div>
             <div className="flex items-center gap-4">
               </div>
-)
+);
               {/* Favorites Sheet */}
               <Sheet>
                 <SheetTrigger asChild>
