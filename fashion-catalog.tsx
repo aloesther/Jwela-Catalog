@@ -1915,7 +1915,7 @@ Thank you!`
       </footer>
 
       {/* Toast Notifications */}
-      <Toaster />
+  </Toaster>
     </div>
   )
 }
