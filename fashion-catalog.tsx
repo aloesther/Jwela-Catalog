@@ -359,12 +359,10 @@ const products = [
     isNew: false,
     isSale: true,
     images: {
-      Green: [
+      green: [
         "/images/Bomber jacket - G.jpg",
-        ]
-        Red: [ "/images/Bomber jacket - R.jpg"
-              ]
-      ],
+        "/images/Bomber jacket - R.jpg" ,
+] ,
     },
   },
     {
