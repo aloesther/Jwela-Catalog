@@ -1838,9 +1838,7 @@ Thank you!`
                 <li>
                   <button
                     className="hover:text-foreground transition-colors text-left"
-                    onClick={() => {
-                      setShowSizeGuideDialog(true)
-                    }}
+                    onClick={() => setShowSizeGuideDialog(true)}
                   >
                     Size Guide
                   </button>
@@ -1851,15 +1849,14 @@ Thank you!`
                     <div className="text-sm space-y-1">
                       <button
                         onClick={() => {
-                          const message =
-                            "Hello! I'm interested in your accessories. Can you help me with more information?"
-                          const accessoriesWhatsApp = `https://wa.me/2348169061610?text=${encodeURIComponent(message)}`
-                          window.open(accessoriesWhatsApp, "_blank")
+                          const message = "Hello! I'm interested in your accessories. Can you help me with more information?";
+                          const accessoriesWhatsApp = `https://wa.me/2348169061610?text=${encodeURIComponent(message)}`;
+                          window.open(accessoriesWhatsApp, "_blank");
                           toast({
                             title: "Opening WhatsApp",
                             description: "Accessories support",
                             duration: 2000,
-                          })
+                          });
                         }}
                         className="block text-green-600 hover:text-green-700 transition-colors underline text-sm"
                       >
@@ -1867,15 +1864,14 @@ Thank you!`
                       </button>
                       <button
                         onClick={() => {
-                          const message =
-                            "Hello! I'm interested in your outfits. Can you help me with more information?"
-                          const outfitsWhatsApp = `https://wa.me/2348067142622?text=${encodeURIComponent(message)}`
-                          window.open(outfitsWhatsApp, "_blank")
+                          const message = "Hello! I'm interested in your outfits. Can you help me with more information?";
+                          const outfitsWhatsApp = `https://wa.me/2348067142622?text=${encodeURIComponent(message)}`;
+                          window.open(outfitsWhatsApp, "_blank");
                           toast({
                             title: "Opening WhatsApp",
                             description: "Outfits support",
                             duration: 2000,
-                          })
+                          });
                         }}
                         className="block text-green-600 hover:text-green-700 transition-colors underline text-sm"
                       >
@@ -1891,7 +1887,7 @@ Thank you!`
               <ul className="space-y-2 text-muted-foreground">
                 <li>
                   <a
-                    href="https://www.instagram.com/jwela.shop?utm_source=ig_web_button_share_sheet&igsh=MWo4b2Zwemo5OXdzeg=="
+                    href="https://www.instagram.com/jwela.shop"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-pink-600 transition-colors"
@@ -1901,7 +1897,7 @@ Thank you!`
                 </li>
                 <li>
                   <a
-                    href="https://www.instagram.com/jwela.apparel?utm_source=ig_web_button_share_sheet&igsh=c3A5cHMwODl4djB4"
+                    href="https://www.instagram.com/jwela.apparel"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-pink-600 transition-colors"
@@ -1918,7 +1914,10 @@ Thank you!`
         </div>
       </footer>
 
-       {/* Toast Notifications */}
-    <Toaster />
-  </div>
-);
+      {/* Toast Notifications */}
+      <Toaster />
+    </div> {/* closes main wrapper div */}
+  );
+}
+
+export default HomePage;
