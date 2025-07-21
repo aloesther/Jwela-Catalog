@@ -746,32 +746,201 @@ return (
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <img src="/images/jwela-logo-clean.png" alt="Jwela" className="h-10 w-auto" />
+            <img
+              src="/images/jwela-logo-clean.png"
+              alt="Jwela"
+              className="h-10 w-auto"
+            />
           </div>
 
-          {/* Right-side content (e.g., buttons, links, etc.) */}
+          {/* Right-side content (Favorites Sheet Button) */}
           <div className="flex items-center gap-4">
-            {/* Example Button (Uncomment or replace with actual content) */}
-            {/* <Button>Login</Button> */}
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon" className="relative">
+                  <Heart className="h-5 w-5" />
+                  {favorites.length > 0 && (
+                    <Badge className="absolute -top-2 -right-2 h-5 w-5 rounded-full p-0 flex items-center justify-center text-xs">
+                      {favorites.length}
+                    </Badge>
+                  )}
+                </Button>
+              </SheetTrigger>
+
+              <SheetContent>
+                <SheetHeader>
+                  <SheetTitle>Favorites ({favorites.length})</SheetTitle>
+                </SheetHeader>
+
+                <div className="mt-6 space-y-4">
+                  {favorites.length === 0 ? (
+                    <p className="text-muted-foreground text-center py-8">
+                      No favorites yet
+                    </p>
+                  ) : (
+                    favorites.map((favoriteId) => {
+                      const product = products.find((p) => p.id === favoriteId)
+                      if (!product) return null
+                      return (
+                        <div
+                          key={product.id}
+                          className="flex items-center gap-3 p-3 border rounded-lg"
+                        >
+                          <img
+                            src={product.image || "/placeholder.svg"}
+                            alt={product.name}
+                            className="w-16 h-16 object-cover rounded"
+                          />
+                          <div className="flex-1">
+                            <h4 className="font-medium text-sm">
+                              {product.name}
+                            </h4>
+                            <p className="text-lg font-bold text-green-600">
+                              ₦{product.price.toLocaleString()}
+                            </p>
+                          </div>
+                          <div className="flex flex-col gap-2">
+                            <Button
+                              size="sm"
+                              onClick={() => handleAddToCart(product)}
+                            >
+                              Add to Cart
+                            </Button>
+                            <Button
+                              size="sm"
+                              variant="outline"
+                              onClick={() => toggleFavorite(product.id)}
+                            >
+                              Remove
+                            </Button>
+                          </div>
+                        </div>
+                      )
+                    })
+                  )}
+
+                  {favorites.length > 0 && (
+                    <Button
+                      variant="outline"
+                      className="w-full mt-4 bg-transparent"
+                      onClick={handleViewCartFavorites}
+                    >
+                      View All Favorites
+                    </Button>
+                  )}
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </div>
     </header>
   </div>
-);
-  {/* Favorites Sheet */}
-            
-                </SheetTrigger>
-                <SheetContent>
-                  <SheetHeader>
-                    <SheetTitle>Favorites ({favorites.length})</SheetTitle>
-                  </SheetHeader>
-                  <div className="mt-6 space-y-4">
-                    {favorites.length === 0 ? (
-                      <p className="text-muted-foreground text-center py-8">No favorites yet</p>
-                    ) : (
-                      favorites.map((favoriteId) => {
-                        const product = products.find((p) => p.id === favoriteId)
+)
+
+return (
+  <div className="min-h-screen bg-background">
+    {/* Header */}
+    <header className="border-b">
+      <div className="container mx-auto px-4 py-6">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <div className="flex items-center">
+            <img
+              src="/images/jwela-logo-clean.png"
+              alt="Jwela"
+              className="h-10 w-auto"
+            />
+          </div>
+
+          {/* Header Right Icons (Favorites & Cart) */}
+          <div className="flex items-center gap-4">
+
+            {/* Favorites Sheet */}
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon" className="relative">
+                  <Heart className="h-5 w-5" />
+                  {favorites.length > 0 && (
+                    <Badge className="absolute -top-2 -right-2 h-5 w-5 rounded-full p-0 flex items-center justify-center text-xs">
+                      {favorites.length}
+                    </Badge>
+                  )}
+                </Button>
+              </SheetTrigger>
+
+              <SheetContent>
+                <SheetHeader>
+                  <SheetTitle>Favorites ({favorites.length})</SheetTitle>
+                </SheetHeader>
+                <div className="mt-6 space-y-4">
+                  {favorites.length === 0 ? (
+                    <p className="text-muted-foreground text-center py-8">No favorites yet</p>
+                  ) : (
+                    favorites.map((favoriteId) => {
+                      const product = products.find((p) => p.id === favoriteId)
+                      if (!product) return null
+                      return (
+                        <div key={product.id} className="flex items-center gap-3 p-3 border rounded-lg">
+                          <img
+                            src={product.image || "/placeholder.svg"}
+                            alt={product.name}
+                            className="w-16 h-16 object-cover rounded"
+                          />
+                          <div className="flex-1">
+                            <h4 className="font-medium text-sm">{product.name}</h4>
+                            <p className="text-lg font-bold text-green-600">₦{product.price.toLocaleString()}</p>
+                          </div>
+                          <div className="flex flex-col gap-2">
+                            <Button size="sm" onClick={() => handleAddToCart(product)}>
+                              Add to Cart
+                            </Button>
+                            <Button size="sm" variant="outline" onClick={() => toggleFavorite(product.id)}>
+                              Remove
+                            </Button>
+                          </div>
+                        </div>
+                      )
+                    })
+                  )}
+
+                  {favorites.length > 0 && (
+                    <Button
+                      variant="outline"
+                      className="w-full mt-4 bg-transparent"
+                      onClick={handleViewCartFavorites}
+                    >
+                      View All Favorites
+                    </Button>
+                  )}
+                </div>
+              </SheetContent>
+            </Sheet>
+
+            {/* Cart Sheet */}
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon" className="relative">
+                  <ShoppingBag className="h-5 w-5" />
+                  {cart.length > 0 && (
+                    <Badge className="absolute -top-2 -right-2 h-5 w-5 rounded-full p-0 flex items-center justify-center text-xs">
+                      {cart.length}
+                    </Badge>
+                  )}
+                </Button>
+              </SheetTrigger>
+
+              <SheetContent>
+                <SheetHeader>
+                  <SheetTitle>Shopping Cart ({cart.length})</SheetTitle>
+                </SheetHeader>
+                <div className="mt-6 space-y-4">
+                  {cart.length === 0 ? (
+                    <p className="text-muted-foreground text-center py-8">Your cart is empty</p>
+                  ) : (
+                    <>
+                      {cart.map((cartId) => {
+                        const product = products.find((p) => p.id === cartId)
                         if (!product) return null
                         return (
                           <div key={product.id} className="flex items-center gap-3 p-3 border rounded-lg">
@@ -786,117 +955,65 @@ return (
                             </div>
                             <div className="flex flex-col gap-2">
                               <Button size="sm" onClick={() => handleAddToCart(product)}>
-                                Add to Cart
+                                Order Now
                               </Button>
-                              <Button size="sm" variant="outline" onClick={() => toggleFavorite(product.id)}>
+                              <Button
+                                size="sm"
+                                variant="outline"
+                                onClick={() => {
+                                  setCart((prev) => prev.filter((id) => id !== cartId))
+                                  toast({
+                                    title: "Removed from cart",
+                                    description: product.name,
+                                    duration: 2000,
+                                  })
+                                }}
+                              >
                                 Remove
                               </Button>
                             </div>
                           </div>
                         )
-                      })
-                    )}
-                    {favorites.length > 0 && (
-                      <Button
-                        variant="outline"
-                        className="w-full mt-4 bg-transparent"
-                        onClick={handleViewCartFavorites}
-                      >
-                        View All Favorites
-                      </Button>
-                    )}
-                  </div>
-                </SheetContent>
-              </Sheet>
-  
+                      })}
 
-              {/* Cart Sheet */}
-              <Sheet>
-                <SheetTrigger asChild>
-                  <Button variant="ghost" size="icon" className="relative">
-                    <ShoppingBag className="h-5 w-5" />
-                    {cart.length > 0 && (
-                      <Badge className="absolute -top-2 -right-2 h-5 w-5 rounded-full p-0 flex items-center justify-center text-xs">
-                        {cart.length}
-                      </Badge>
-                    )}
-                  </Button>
-                </SheetTrigger>
-                <SheetContent>
-                  <SheetHeader>
-                    <SheetTitle>Shopping Cart ({cart.length})</SheetTitle>
-                  </SheetHeader>
-                  <div className="mt-6 space-y-4">
-                    {cart.length === 0 ? (
-                      <p className="text-muted-foreground text-center py-8">Your cart is empty</p>
-                    ) : (
-                      <>
-                        {cart.map((cartId) => {
-                          const product = products.find((p) => p.id === cartId)
-                          if (!product) return null
-                          return (
-                            <div key={product.id} className="flex items-center gap-3 p-3 border rounded-lg">
-                              <img
-                                src={product.image || "/placeholder.svg"}
-                                alt={product.name}
-                                className="w-16 h-16 object-cover rounded"
-                              />
-                              <div className="flex-1">
-                                <h4 className="font-medium text-sm">{product.name}</h4>
-                                <p className="text-lg font-bold text-green-600">₦{product.price.toLocaleString()}</p>
-                              </div>
-                              <div className="flex flex-col gap-2">
-                                <Button size="sm" onClick={() => handleAddToCart(product)}>
-                                  Order Now
-                                </Button>
-                                <Button
-                                  size="sm"
-                                  variant="outline"
-                                  onClick={() => {
-                                    setCart((prev) => prev.filter((id) => id !== cartId))
-                                    toast({
-                                      title: "Removed from cart",
-                                      description: product.name,
-                                      duration: 2000,
-                                    })
-                                  }}
-                                >
-                                  Remove
-                                </Button>
-                              </div>
-                            </div>
-                          )
-                        })}
-                        <Separator />
-                        <div className="space-y-2">
-                          <div className="flex justify-between items-center font-semibold">
-                            <span>Total:</span>
-                            <span className="text-xl text-green-600">
-                              ₦
-                              {cart
-                                .reduce((total, cartId) => {
-                                  const product = products.find((p) => p.id === cartId)
-                                  return total + (product?.price || 0)
-                                }, 0)
-                                .toLocaleString()}
-                            </span>
-                          </div>
-                          <Button className="w-full" size="lg">
-                            Checkout All Items
-                          </Button>
-                          <Button variant="outline" className="w-full bg-transparent" onClick={handleViewCartFavorites}>
-                            View All Cart Items
-                          </Button>
+                      <Separator />
+
+                      <div className="space-y-2">
+                        <div className="flex justify-between items-center font-semibold">
+                          <span>Total:</span>
+                          <span className="text-xl text-green-600">
+                            ₦
+                            {cart
+                              .reduce((total, cartId) => {
+                                const product = products.find((p) => p.id === cartId)
+                                return total + (product?.price || 0)
+                              }, 0)
+                              .toLocaleString()}
+                          </span>
                         </div>
-                      </>
-                    )}
-                  </div>
-                </SheetContent>
-              </Sheet>
-            </div>
+
+                        <Button className="w-full" size="lg">
+                          Checkout All Items
+                        </Button>
+                        <Button
+                          variant="outline"
+                          className="w-full bg-transparent"
+                          onClick={handleViewCartFavorites}
+                        >
+                          View All Cart Items
+                        </Button>
+                      </div>
+                    </>
+                  )}
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
+  </div>
+)
 
       {/* Hero Section */}
       <section className="relative overflow-hidden">
