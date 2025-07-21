@@ -1918,8 +1918,7 @@ Thank you!`
         </div>
       </footer>
 
-      {/* Toast Notifications */}
-      <Toaster />
-    </div>
-  )
-}
+       {/* Toast Notifications */}
+    <Toaster />
+  </div>
+);
