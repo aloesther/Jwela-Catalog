@@ -1916,8 +1916,6 @@ Thank you!`
 
       {/* Toast Notifications */}
       <Toaster />
-    </div> {/* closes main wrapper div */}
-  );
+    </div>
+  )
 }
-
-export default HomePage;
