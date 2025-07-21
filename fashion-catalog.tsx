@@ -739,7 +739,6 @@ export default function Component() {
 
   return (
     <div className="min-h-screen bg-background">
-      
       {/* Header */}
       <header className="border-b">
         <div className="container mx-auto px-4 py-6">
@@ -748,8 +747,7 @@ export default function Component() {
               <img src="/images/jwela-logo-clean.png" alt="Jwela" className="h-10 w-auto" />
             </div>
             <div className="flex items-center gap-4">
-              </div>
-);
+            )
               {/* Favorites Sheet */}
               <Sheet>
                 <SheetTrigger asChild>
