@@ -1912,12 +1912,10 @@ Thank you!`
             <p>&copy; 2025 Jwela Brand. All rights reserved.</p>
           </div>
         </div>
-      </footer>
-    {/* Toast Notifications */}
-      <Toaster />
-    </div> {/* Closing outer div */}
-
-  );
-}
-
-export default FashionCatalog;
+          </footer>
+          
+          {/* Toast Notifications */}
+          <Toaster />
+        </div>
+      );
+    }
