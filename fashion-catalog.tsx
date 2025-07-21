@@ -759,9 +759,7 @@ return (
     </header>
   </div>
 );
-
-  
-              {/* Favorites Sheet */}
+  {/* Favorites Sheet */}
               <Sheet>
                 <SheetTrigger asChild>
                   <Button variant="ghost" size="icon" className="relative">
@@ -773,7 +771,7 @@ return (
                     )}
                   </Button>
                 </div>
-          
+            
                 </SheetTrigger>
                 <SheetContent>
                   <SheetHeader>
@@ -821,6 +819,7 @@ return (
                   </div>
                 </SheetContent>
               </Sheet>
+  
 
               {/* Cart Sheet */}
               <Sheet>
