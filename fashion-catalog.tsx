@@ -1913,10 +1913,11 @@ Thank you!`
           </div>
         </div>
       </footer>
-      {/* Toast Notifications */}
+    {/* Toast Notifications */}
       <Toaster />
-    </div> {/* Closing main container */}
+    </div> {/* Closing outer div */}
+
   );
 }
 
-export default FashionCatalog; // <- This must be included!
+export default FashionCatalog;
