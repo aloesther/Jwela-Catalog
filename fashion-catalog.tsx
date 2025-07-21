@@ -747,7 +747,6 @@ export default function Component() {
               <img src="/images/jwela-logo-clean.png" alt="Jwela" className="h-10 w-auto" />
             </div>
             <div className="flex items-center gap-4">
-              
               {/* Favorites Sheet */}
               <Sheet>
                 <SheetTrigger asChild>
@@ -759,8 +758,9 @@ export default function Component() {
                       </Badge>
                     )}
                   </Button>
-                    </div> 
-            );
+                  </div>
+               </div>
+             )
                 </SheetTrigger>
                 <SheetContent>
                   <SheetHeader>
