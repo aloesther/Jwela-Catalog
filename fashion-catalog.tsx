@@ -737,7 +737,8 @@ export default function Component() {
     return <CartFavoritesPage initialCart={cart} initialFavorites={favorites} onBack={handleBackToMain} />
   }
 
-  return <div className="min-h-screen bg-background">
+  return (
+    <div className="min-h-screen bg-background">
       
       {/* Header */}
       <header className="border-b">
@@ -747,6 +748,8 @@ export default function Component() {
               <img src="/images/jwela-logo-clean.png" alt="Jwela" className="h-10 w-auto" />
             </div>
             <div className="flex items-center gap-4">
+              </div>
+)
               {/* Favorites Sheet */}
               <Sheet>
                 <SheetTrigger asChild>
