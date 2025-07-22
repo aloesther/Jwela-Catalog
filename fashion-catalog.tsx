@@ -48,7 +48,7 @@ const products = [
     image: "/images/Casio 14.jpg",
     rating: 4.8,
     colors: ["Black", "Gold", "Silver"],
-    isNew: true,
+    isNew: false,
     isSale: false,
     images: {
       "light blue": ["/images/Casio 14.jpg"
@@ -67,7 +67,7 @@ const products = [
     rating: 4.6,
     colors: ["Black", "Gold", "Silver"],
     isNew: false,
-    isSale: true,
+    isSale: false,
     images: {
       black: [
         "/images/Casio Illuminator - 25.jpg",
@@ -115,7 +115,7 @@ const products = [
     image: "/images/Daniel Wellinton 15.jpg",
     rating: 4.9,
     colors: ["Black"],
-    isNew: true,
+    isNew: false,
     isSale: false,
     images: {
       black: [
@@ -216,7 +216,7 @@ const products = [
     image: "/images/Patek Philippe 24.jpg",
     rating: 4.7,
     colors: ["Silver", "Silver"],
-    isNew: true,
+    isNew: false,
     isSale: false,
     images: {
       silver: [
@@ -910,7 +910,6 @@ export default function Component() {
               <div className="text-center text-white">
                 <h2 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg"></h2>
                 <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto drop-shadow-md opacity-90"></p>
-                <Button size="lg" className="px-8 bg-white text-black hover:bg-gray-100 font-semibold">
                  
                 </Button>
               </div>
@@ -929,7 +928,6 @@ export default function Component() {
               <div className="text-center text-white">
                 <h2 className="text-2xl sm:text-3xl font-bold mb-3 drop-shadow-lg"></h2>
                 <p className="text-base sm:text-lg mb-6 max-w-sm mx-auto drop-shadow-md opacity-90"></p>
-                <Button size="default" className="px-6 bg-white text-black hover:bg-gray-100 font-semibold">
                   
                 </Button>
               </div>
@@ -962,12 +960,12 @@ export default function Component() {
                   <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
                   <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
                   <Star className="h-5 w-5 text-yellow-400" />
-                  <span className="text-sm text-muted-foreground ml-2">4.5 (128 reviews)</span>
+                  <span className="text-sm text-muted-foreground ml-2">4.5</span>
                 </div>
               </div>
               <div className="flex items-center gap-3 mb-6">
-                <span className="text-3xl font-bold">₦100,000</span>
-                <Badge className="bg-red-500 hover:bg-red-600">Sale</Badge>
+                <span className="text-3xl font-bold">₦150,000</span>
+                <Badge className="bg-red-500 hover:bg-red-600"></Badge>
               </div>
             </div>
 
@@ -991,8 +989,8 @@ export default function Component() {
             <div className="border-t pt-6">
               <div className="grid grid-cols-3 gap-4 text-center">
                 <div>
-                  <div className="font-semibold">Free Shipping</div>
-                  <div className="text-sm text-muted-foreground">On orders over ₦50,000</div>
+                  <div className="font-semibold"></div>
+                  <div className="text-sm text-muted-foreground"></div>
                 </div>
                 <div>
                   <div className="font-semibold">Authentic Design</div>
@@ -1260,8 +1258,8 @@ export default function Component() {
                 <div className="border-t pt-6">
                   <div className="grid grid-cols-2 gap-4 text-center">
                     <div>
-                      <div className="font-semibold">Free Shipping</div>
-                      <div className="text-sm text-muted-foreground">On orders over ₦50,000</div>
+                      <div className="font-semibold"></div>
+                      <div className="text-sm text-muted-foreground"></div>
                     </div>
                     <div>
                       <div className="font-semibold">Quality Guarantee</div>
