@@ -804,7 +804,7 @@ export default function Component() {
                   </div>
                 </SheetContent>
               </Sheet>
-
+              
               {/* Cart Sheet */}
               <Sheet>
                 <SheetTrigger asChild>
