@@ -473,7 +473,7 @@ const products = [
     },
   },
          {
-    id: 22,
+    id: 24,
     name: "Mint green complete Agbada",
     price: 150000,
     category: "Outfits",
@@ -490,6 +490,24 @@ const products = [
       ],
     },
   },
+
+         {
+    id: 25,
+    name: " Mossanite diamond",
+    price: 120000,
+    category: "Accessories",
+    gender: "Unisex",
+    image: "/images/ring 1.jpg",
+    rating: 4.8,
+    colors: ["Silver"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      silver: [
+        "/images/ring 2.jpg" ,
+        "/images/ring 3.jpg",
+        "/images/ring 4.jpg"
 ]
 
 const categories = ["All", "Outfits", "Accessories"]
