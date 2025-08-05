@@ -754,9 +754,6 @@ export default function Component() {
   if (showCartFavoritesPage) {
     return <CartFavoritesPage initialCart={cart} initialFavorites={favorites} onBack={handleBackToMain} />
   }
-
-  return (
-    <div className="min-h-screen bg-background">
       
       {/* Header */}
       <header className="border-b">
