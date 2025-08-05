@@ -237,7 +237,7 @@ export default function CartFavoritesPage({
                                   <div className="flex items-center">
                                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                                     <span className="text-sm text-muted-foreground ml-1">
-                                      {product!.rating} ({product!.reviews})
+                                      {product!.rating}
                                     </span>
                                   </div>
                                   {product!.isSale && <Badge variant="destructive">Sale</Badge>}
