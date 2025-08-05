@@ -493,7 +493,7 @@ const products = [
 
          {
     id: 25,
-    name: " Mossanite diamond",
+    name: "Mossanite diamond",
     price: 120000,
     category: "Accessories",
     gender: "Unisex",
@@ -507,7 +507,10 @@ const products = [
       silver: [
         "/images/ring 2.jpg" ,
         "/images/ring 3.jpg",
-        "/images/ring 4.jpg"
+        "/images/ring 4.jpg",
+        ],
+      }, 
+    },
 ]
 
 const categories = ["All", "Outfits", "Accessories"]
