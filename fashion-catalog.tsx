@@ -1130,7 +1130,7 @@ export default function Component() {
                     )}
                   </div>
                   <Button
-                    className="w-full"
+                    className="className="w-full bg-slate-900 hover:bg-slate-800 text-white transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95"
                     onClick={(e) => {
                       e.stopPropagation()
                       handleAddToCart(product)
@@ -1228,13 +1228,13 @@ export default function Component() {
                   <div className="flex gap-4">
                     <Button
                       size="lg"
-                      className="flex-1"
+                      className="className="w-full bg-slate-900 hover:bg-slate-800 text-white transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95"
                       onClick={() => {
                         handleAddToCart(previewProduct)
                         setShowProductPreview(false)
                       }}
                     >
-                      <ShoppingBag className="h-5 w-5 mr-2" />
+                      <ShoppingBag className="h-5 w-5 mr-2" />               
                       Add to Cart
                     </Button>
                     <Button
