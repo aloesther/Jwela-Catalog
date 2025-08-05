@@ -22,7 +22,24 @@ import CartFavoritesPage from "./cart-favorites-page"
 
 const products = [
   {
-    id: 1,
+     id: 1,
+    name: "Casio Wristwatch",
+    originalPrice: 16000,
+    price: 14000,
+    category: "Accessories",
+    gender: "Unisex",
+    image: "/images/Casio 14.jpg",
+    rating: 4.8,
+    colors: ["Black", "Gold", "Silver"],
+    isNew: false,
+    isSale: true,
+    images: {
+      "light blue": ["/images/Casio 14.jpg"
+      ],
+    },
+  },
+  {
+       id: 2,
     name: "Traditional Agbada - Turquoise",
     price: 150000,
     category: "Outfits",
@@ -36,23 +53,6 @@ const products = [
     images: {
       turquoise: [
         "/images/jwela-agbada.jpg",
-      ],
-    },
-  },
-  {
-       id: 2,
-    name: "Casio Wristwatch",
-    originalPrice: 16000,
-    price: 14000,
-    category: "Accessories",
-    gender: "Unisex",
-    image: "/images/Casio 14.jpg",
-    rating: 4.8,
-    colors: ["Black", "Gold", "Silver"],
-    isNew: false,
-    isSale: true,
-    images: {
-      "light blue": ["/images/Casio 14.jpg"
         
       ],
     },
@@ -90,7 +90,7 @@ const products = [
     image: "/images/Curren 45.jpg",
     rating: 4.7,
     colors: ["Black", "Black", "Brown", "Brown"],
-    isNew: true,
+    isNew: false,
     isSale: false,
     images: {
       "Black": [
@@ -129,14 +129,13 @@ const products = [
     id: 6,
     name: "G shock Wristwatch",
     price: 38000,
-    originalPrice: 40000,
     category: "Accessories",
     gender: "Male",
     image: "/images/G shock B38.jpg",
     rating: 4.8,
     colors: ["Black", "Gold", "White", "Gold"],
     isNew: false,
-    isSale: true,
+    isSale: false,
     images: {
       "black": [
         "/images/G shock B38.jpg",
@@ -194,14 +193,13 @@ const products = [
     id: 9,
     name: "Montblanc Wristwatch",
     price: 10000,
-    originalPrice: 15000,
     category: "Accessories",
     gender: "Female",
     image: "/images/Montblanc G10.jpg",
     rating: 4.4,
     colors: ["Gold"],
     isNew: false,
-    isSale: true,
+    isSale: false,
     images: {
       gold: [
         "/images/Montblanc G10.jpg",
@@ -313,14 +311,13 @@ const products = [
     id: 15,
     name: "Promade Wristwatch",
     price: 17000,
-    originalPrice: 20000,
     category: "Accessories",
     gender: "Male",
     image: "/images/Promade Br17.jpg",
     rating: 4.8,
     colors: ["Brown"],
     isNew: false,
-    isSale: true,
+    isSale: false,
     images: {
       brown: [
         "/images/Promade Br17.jpg",
@@ -416,7 +413,7 @@ const products = [
     isSale: false,
     images: {
       blue: [
-        "/images/jwela-agbada.jpg",
+        "/images/Blue and black kaftan.jpg",
       ],
     },
   },
@@ -452,7 +449,7 @@ const products = [
     isSale: false,
     images: {
       brown: [
-        "/images/Carton color complete agbada set.jpg" ,
+        "/images/Carton color complete agbada set.jpg",
       ],
     },
   },
@@ -782,7 +779,8 @@ export default function Component() {
                               <p className="text-lg font-bold text-green-600">₦{product.price.toLocaleString()}</p>
                             </div>
                             <div className="flex flex-col gap-2">
-                              <Button size="sm" onClick={() => handleAddToCart(product)}>
+                              <Button size="sm" className="w-full bg-slate-900 hover:bg-slate-800 text-white transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95"
+                                  onClick={() => handleAddToCart(product)}>
                                 Add to Cart
                               </Button>
                               <Button size="sm" variant="outline" onClick={() => toggleFavorite(product.id)}>
@@ -1176,7 +1174,7 @@ export default function Component() {
                     <div className="flex items-center">
                       <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
                       <span className="text-sm text-muted-foreground ml-2">
-                        {previewProduct.rating} ({previewProduct.reviews} reviews)
+                        {previewProduct.rating}
                       </span>
                     </div>
                   </div>
@@ -1714,7 +1712,7 @@ Thank you!`
                         className="block text-green-600 hover:text-green-700 transition-colors underline text-sm"
                       >
                         <MessageCircle className="h-4 w-4" />
-                        Accessories (+234 816 906 1610)
+                        Accessories (+234 8169061610)
                       </button>
                       <button
                         onClick={() => {
@@ -1731,7 +1729,7 @@ Thank you!`
                         className="block text-green-600 hover:text-green-700 transition-colors underline text-sm"
                       >
                         <MessageCircle className="h-4 w-4" />
-                        Outfits (+234 806 714 2622)
+                        Outfits (+234 8067142622)
                       </button>
                     </div>
                   </div>
