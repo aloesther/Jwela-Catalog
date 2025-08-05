@@ -763,6 +763,7 @@ export default function Component() {
               <img src="/images/jwela-logo-clean.png" alt="Jwela" className="h-10 w-auto" />
             </div>
             <div className="flex items-center gap-4">
+
               {/* Favorites Sheet */}
               <Sheet>
                 <SheetTrigger asChild>
@@ -1022,8 +1023,6 @@ export default function Component() {
         </div>
       </section>
 
-    return (
-    <div className="container mx-auto px-4 py-8">
       {/* Filters and Search */}
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row gap-4 mb-8">
@@ -1036,6 +1035,7 @@ export default function Component() {
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="pl-10"
               />
+
             </div>
           </div>
           <div className="flex gap-4">
