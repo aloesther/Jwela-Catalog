@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Search, Filter, Heart, ShoppingBag, Star, X, Instagram, ChevronLeft, ChevronRight } from "lucide-react"
+import { Search, Filter, Heart, ShoppingBag, Star, X, Instagram, ChevronLeft, ChevronRight, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
@@ -23,9 +23,26 @@ import CartFavoritesPage from "./cart-favorites-page"
 const products = [
   {
     id: 1,
+    name: "Casio Wristwatch",
+    price: 14000,
+    originalPrice: 16000,
+    category: "Accessories",
+    gender: "Unisex",
+    image: "/images/Casio 14.jpg",
+    rating: 4.8,
+    colors: ["Black", "Gold", "Silver"],
+    isNew: false,
+    isSale: true,
+    images: {
+      "light blue": ["/images/Casio 14.jpg"                     
+      ],
+    },
+  },
+  {
+    id: 2,
     name: "Traditional Agbada - Turquoise",
     price: 120000,
-    category: "Dresses",
+    category: "Outfits",
     gender: "Male",
     image: "/images/jwela-agbada.jpg",
     rating: 4.5,
@@ -36,23 +53,6 @@ const products = [
     images: {
       turquoise: [
         "/images/jwela-agbada.jpg",
-      ],
-    },
-  },
-  {
-       id: 2,
-    name: "Casio Wristwatch",
-    price: 14000,
-    category: "Accessories",
-    gender: "Unisex",
-    image: "/images/Casio 14.jpg",
-    rating: 4.8,
-    colors: ["Black", "Gold", "Silver"],
-    isNew: false,
-    isSale: false,
-    images: {
-      "light blue": ["/images/Casio 14.jpg"
-        
       ],
     },
   },
@@ -89,7 +89,7 @@ const products = [
     image: "/images/Curren 45.jpg",
     rating: 4.7,
     colors: ["Black", "Black", "Brown", "Brown"],
-    isNew: true,
+    isNew: false,
     isSale: false,
     images: {
       "Black": [
@@ -108,7 +108,7 @@ const products = [
   },
   {
     id: 5,
-    name: "Daniel Wellinton Wristwatch",
+    name: "Daniel Wellington Wristwatch",
     price: 15000,
     category: "Accessories",
     gender: "Male",
@@ -135,7 +135,7 @@ const products = [
     rating: 4.8,
     colors: ["Black", "Gold", "White", "Gold"],
     isNew: false,
-    isSale: true,
+    isSale: false,
     images: {
       "black": [
         "/images/G shock B38.jpg",
@@ -200,7 +200,7 @@ const products = [
     rating: 4.4,
     colors: ["Gold"],
     isNew: false,
-    isSale: true,
+    isSale: false,
     images: {
       gold: [
         "/images/Montblanc G10.jpg",
@@ -229,7 +229,7 @@ const products = [
   },
   {
     id: 11,
-    name: "Patex Philippe Wristwatch",
+    name: "Patek Philippe Wristwatch",
     price: 25000,
     category: "Accessories",
     gender: "Male",
@@ -319,7 +319,7 @@ const products = [
     rating: 4.8,
     colors: ["Brown"],
     isNew: false,
-    isSale: true,
+    isSale: false,
     images: {
       brown: [
         "/images/Promade Br17.jpg",
@@ -330,7 +330,7 @@ const products = [
     id: 16,
     name: "Black Unisex Bomber jacket",
     price: 25000,
-    category: "Dresses",
+    category: "Outfits",
     gender: "Unisex",
     image: "/images/Black Bomber jacket.jpg",
     rating: 4.5,
@@ -349,14 +349,14 @@ const products = [
     id: 17,
     name: "Africa Print Bomber jacket",
     price: 20000,
-    category: "Dresses",
+    category: "Outfits",
     gender: "Unisex",
     image: "/images/Bomber jacket - .jpg",
     rating: 4.5,
     colors: ["Red", "Green"],
     sizes: ["M", "L", "XL", "XXL"],
     isNew: false,
-    isSale: true,
+    isSale: false,
     images: {
       green: [
         "/images/Bomber jacket - G.jpg",
@@ -368,7 +368,7 @@ const products = [
     id: 18,
     name: "Black kaftan with embroidery",
     price: 60000,
-    category: "Kaftan",
+    category: "Outfits",
     gender: "Male",
     image: "/images/Black kaftan.jpg",
     rating: 4.5,
@@ -386,7 +386,7 @@ const products = [
     id: 19,
     name: "Blue Kaftan with embroidery",
     price: 60000,
-    category: "Kaftan",
+    category: "Outfits",
     gender: "Male",
     image: "/images/Blue Kaftan.jpg",
     rating: 4.5,
@@ -405,7 +405,7 @@ const products = [
     id: 20,
     name: "Blue kaftan with black sleeve",
     price: 50000,
-    category: "Kaftan",
+    category: "Outfits",
     gender: "Male",
     image: "/images/Blue and black kaftan.jpg",
     rating: 4.5,
@@ -423,7 +423,7 @@ const products = [
     id: 21,
     name: "Blue complete Agbada",
     price: 120000,
-    category: "Agbada",
+    category: "Outfits",
     gender: "Male",
     image: "/images/Blue complete agbaada.jpg",
     rating: 4.5,
@@ -441,7 +441,7 @@ const products = [
     id: 22,
     name: "Carton color complete Agbada",
     price: 150000,
-    category: "Agbada",
+    category: "Outfits",
     gender: "Male",
     image: "/images/Carton color complete agbada set.jpg",
     rating: 4.5,
@@ -459,7 +459,7 @@ const products = [
     id: 23,
     name: "Green complete Agbada",
     price: 150000,
-    category: "Agbada",
+    category: "Outfits",
     gender: "Male",
     image: "/images/Green Agbada.jpg",
     rating: 4.5,
@@ -478,7 +478,7 @@ const products = [
     id: 24,
     name: "Mint green complete Agbada",
     price: 150000,
-    category: "Agbada",
+    category: "Outfits",
     gender: "Male",
     image: "/images/Mint Green complete Agbada set.jpg",
     rating: 4.5,
@@ -492,10 +492,30 @@ const products = [
       ],
     },
   },
+         {
+    id: 25,
+    name: "Mossanite diamond ring",
+    price: 120000,
+    category: "Accessories",
+    gender: "Unisex",
+    image: "/images/ring 1.jpg",
+    rating: 4.8,
+    colors: ["Silver"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      silver: [
+        "/images/ring 2.jpg" ,
+        "/images/ring 3.jpg",
+        "/images/ring 4.jpg", 
+      ],
+    },
+  },
 ]
 
-const categories = ["All", "Dresses", "Pants", "Kaftan", "Agbada", "Accessories"]
-const genderFilters = ["All", "Male", "Female", "Unisex"]
+const categories = ["All", "Outfits", "Accessories"]
+const genderFilters = ["Male", "Female", "Unisex"]
 
 export default function Component() {
   const [selectedCategory, setSelectedCategory] = useState("All")
@@ -840,7 +860,7 @@ export default function Component() {
                                 <h4 className="font-medium text-sm">{product.name}</h4>
                                 <p className="text-lg font-bold text-green-600">₦{product.price.toLocaleString()}</p>
                               </div>
-                              <div className="flex flex-col gap-2">
+                              <div className="w-full bg-slate-900 hover:bg-slate-800 text-white transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95">
                                 <Button size="sm" onClick={() => handleAddToCart(product)}>
                                   Order Now
                                 </Button>
@@ -950,7 +970,7 @@ export default function Component() {
           {/* Product Details */}
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-2">Traditional Agbada - Turquoise</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-2">Casio Wristwatch</h3>
               <div className="flex items-center gap-2 mb-4">
                 <div className="flex items-center">
                   <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
@@ -958,23 +978,23 @@ export default function Component() {
                   <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
                   <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
                   <Star className="h-5 w-5 text-yellow-400" />
-                  <span className="text-sm text-muted-foreground ml-2">4.5</span>
+                  <span className="text-sm text-muted-foreground ml-2">5</span>
                 </div>
               </div>
               <div className="flex items-center gap-3 mb-6">
-                <span className="text-3xl font-bold">₦150,000</span>
+                <span className="text-3xl font-bold">₦14,000</span>
                 <Badge className="bg-red-500 hover:bg-red-600"></Badge>
               </div>
             </div>
 
             <div className="space-y-4">
               <p className="text-muted-foreground">
-                Experience the epitome of African elegance with our Traditional Agbada. Meticulously crafted with
-                premium materials, this timeless attire exudes sophistication and cultural pride.
+                Experience timeless functionality and style with our Casio wristwatch. 
+                Designed with precision and durability, it’s the perfect blend of everyday reliability and classic sophistication.
               </p>
 
               <div className="flex gap-4">
-                <Button size="lg" className="flex-1" onClick={() => handleAddToCart(products[0])}>
+                <Button size="lg" className="w-full bg-slate-900 hover:bg-slate-800 text-white transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95" onClick={() => handleAddToCart(products[0])}>
                   <ShoppingBag className="h-5 w-5 mr-2" />
                   Add to Cart
                 </Button>
@@ -986,10 +1006,6 @@ export default function Component() {
 
             <div className="border-t pt-6">
               <div className="grid grid-cols-3 gap-4 text-center">
-                <div>
-                  <div className="font-semibold"></div>
-                  <div className="text-sm text-muted-foreground"></div>
-                </div>
                 <div>
                   <div className="font-semibold">Authentic Design</div>
                   <div className="text-sm text-muted-foreground">Handcrafted</div>
@@ -1131,7 +1147,7 @@ export default function Component() {
                     )}
                   </div>
                   <Button
-                    className="w-full"
+                    className="w-full bg-slate-900 hover:bg-slate-800 text-white transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95"
                     onClick={(e) => {
                       e.stopPropagation()
                       handleAddToCart(product)
@@ -1175,7 +1191,7 @@ export default function Component() {
                     <div className="flex items-center">
                       <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
                       <span className="text-sm text-muted-foreground ml-2">
-                        {previewProduct.rating} ({previewProduct.reviews} reviews)
+                        {previewProduct.rating}
                       </span>
                     </div>
                   </div>
@@ -1229,13 +1245,13 @@ export default function Component() {
                   <div className="flex gap-4">
                     <Button
                       size="lg"
-                      className="flex-1"
+                      className="w-full bg-slate-900 hover:bg-slate-800 text-white transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95"
                       onClick={() => {
                         handleAddToCart(previewProduct)
                         setShowProductPreview(false)
                       }}
                     >
-                      <ShoppingBag className="h-5 w-5 mr-2" />
+                      <ShoppingBag className="w-full bg-slate-900 hover:bg-slate-800 text-white transition-all duration-300 hover:shadow-lg hover:scale-105 active:scale-95" />
                       Add to Cart
                     </Button>
                     <Button
@@ -1712,7 +1728,8 @@ Thank you!`
                         }}
                         className="block text-green-600 hover:text-green-700 transition-colors underline text-sm"
                       >
-                        WhatsApp Accessories (+234 816 906 1610)
+                        <MessageCircle className="h-4 w-4" />                        
+                        Accessories (+234 8169061610)
                       </button>
                       <button
                         onClick={() => {
@@ -1728,7 +1745,8 @@ Thank you!`
                         }}
                         className="block text-green-600 hover:text-green-700 transition-colors underline text-sm"
                       >
-                        WhatsApp Outfits (+234 806 714 2622)
+                       <MessageCircle className="h-4 w-4" />                      
+                       Outfits (+234 8067142622)
                       </button>
                     </div>
                   </div>
@@ -1745,6 +1763,7 @@ Thank you!`
                     rel="noopener noreferrer"
                     className="hover:text-pink-600 transition-colors"
                   >
+                   <Instagram className="h-4 w-4" />                       
                     @jwela.shop (Accessories)
                   </a>
                 </li>
@@ -1755,6 +1774,7 @@ Thank you!`
                     rel="noopener noreferrer"
                     className="hover:text-pink-600 transition-colors"
                   >
+                   <Instagram className="h-4 w-4" />                       
                     @jwela.apparel (Outfits)
                   </a>
                 </li>
