@@ -60,7 +60,6 @@ const products = [
     id: 3,
     name: "Casio Illuminator Wristwatch",
     price: 25000,
-    originalPrice: 30000,
     category: "Accessories",
     gender: "Unisex",
     image: "/images/Casio Illuminator - 25.jpg",
@@ -128,7 +127,6 @@ const products = [
     id: 6,
     name: "G shock Wristwatch",
     price: 38000,
-    originalPrice: 40000,
     category: "Accessories",
     gender: "Male",
     image: "/images/G shock B38.jpg",
@@ -193,7 +191,6 @@ const products = [
     id: 9,
     name: "Montblanc Wristwatch",
     price: 10000,
-    originalPrice: 15000,
     category: "Accessories",
     gender: "Female",
     image: "/images/Montblanc G10.jpg",
@@ -312,7 +309,6 @@ const products = [
     id: 15,
     name: "Promade Wristwatch",
     price: 17000,
-    originalPrice: 20000,
     category: "Accessories",
     gender: "Male",
     image: "/images/Promade Br17.jpg",
@@ -1122,7 +1118,7 @@ export default function Component() {
                     <div className="flex items-center">
                       <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                       <span className="text-sm text-muted-foreground ml-1">
-                        {product.rating} ({product.reviews})
+                        {product.rating}
                       </span>
                     </div>
                   </div>
