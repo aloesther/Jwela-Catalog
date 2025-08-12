@@ -41,7 +41,7 @@ const products = [
   {
     id: 2,
     name: "Traditional Agbada - Turquoise",
-    price: 120000,
+    price: 150000,
     category: "Outfits",
     gender: "Male",
     image: "/images/jwela-agbada.jpg",
@@ -59,7 +59,7 @@ const products = [
   {
     id: 3,
     name: "Casio Illuminator Wristwatch",
-    price: 25000,
+    price: 28000,
     category: "Accessories",
     gender: "Unisex",
     image: "/images/Casio Illuminator - 25.jpg",
@@ -418,11 +418,11 @@ const products = [
          {
     id: 21,
     name: "Blue complete Agbada",
-    price: 120000,
+    price: 150000,
     category: "Outfits",
     gender: "Male",
     image: "/images/Blue complete agbaada.jpg",
-    rating: 4.5,
+    rating: 4.7,
     colors: ["Blue"],
     sizes: ["M", "L", "XL", "XXL"],
     isNew: false,
@@ -603,7 +603,7 @@ const products = [
          {
     id: 31,
     name: "Green Kaftan with Embroidery",
-    price: 120000,
+    price: 50000,
     category: "Outfits",
     gender: "Male",
     image: "/images/Green Kaftan with Embroidery.jpg",
@@ -622,7 +622,7 @@ const products = [
          {
     id: 32,
     name: "Navy Blue Striped Kaftan",
-    price: 120000,
+    price: 50000,
     category: "Outfits",
     gender: "Male",
     image: "/images/Blue Striped Kaftan.png",
