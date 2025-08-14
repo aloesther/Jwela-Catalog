@@ -84,7 +84,7 @@ const products = [
     gender: "Male",
     image: "/images/Curren 45.jpg",
     rating: 4.7,
-    colors: ["Black", "Black", "Brown", "Brown"],
+    colors: ["Black", "White", "Brown", "Silver"],
     isNew: false,
     isSale: false,
     images: {
@@ -122,7 +122,7 @@ const products = [
     gender: "Male",
     image: "/images/G shock B38.jpg",
     rating: 4.8,
-    colors: ["Black", "Gold", "White", "Gold"],
+    colors: ["Blue", "Green", "White"],
     isNew: false,
     isSale: false,
     images: {
@@ -188,7 +188,7 @@ const products = [
   },
   {
     id: 10,
-    name: "Patek Philippe Wristwatch",
+    name: "Patek Philippe Wristwatch - 001",
     price: 24000,
     category: "Accessories",
     gender: "Male",
@@ -206,20 +206,18 @@ const products = [
   },
   {
     id: 11,
-    name: "Patek Philippe Wristwatch",
+    name: "Patek Philippe Wristwatch - 002",
     price: 25000,
     category: "Accessories",
     gender: "Male",
     image: "/images/Patex Philippe 25.jpg",
     rating: 4.3,
-    colors: ["Black", "Blue", "Black", "Black"],
+    colors: ["Blue", "Black"],
     isNew: false,
     isSale: false,
     images: {
       black: [
         "/images/Patex Philippe 25.jpg",
-      ],
-      blue: [
         "/images/Patex Philippe B25.jpg",
         "/images/Patex Philippe S25.jpg",
         "/images/Patex Philippe bb25.jpg",
@@ -239,6 +237,7 @@ const products = [
     isSale: false,
     images: {
       silver: [
+        "/images/Poedagar .25..jpg",
         "/images/Poedagar .25...jpg",
         "/images/Poedagar .25.....jpg" ,
       ],
@@ -256,7 +255,8 @@ const products = [
     isNew: false,
     isSale: false,
     images: {
-      black: ["images/Poedagar B25.jpg",
+      black: ["/images/Poedagar S25.jpg",
+              "images/Poedagar B25.jpg",
               "/images/Poedagar R25.jpg",
       ],
     },
@@ -273,9 +273,10 @@ const products = [
     isNew: false,
     isSale: false,
     images: {
-      silver: [ "/images/Poedagar ss25.jpg" ,
-        "/images/Poedagar sss25.jpg" ,
-        "/images/Poedagar Rs25.jpg" ,
+      silver: ["/images/Poedagar 25.jpg",
+               "/images/Poedagar ss25.jpg" ,
+               "/images/Poedagar sss25.jpg" ,
+               "/images/Poedagar Rs25.jpg" ,
         ],
     },
   },
@@ -329,6 +330,7 @@ const products = [
     isSale: false,
     images: {
       green: [
+        "/images/Bomber jacket - .jpg",
         "/images/Bomber jacket - G.jpg",
         "/images/Bomber jacket - R.jpg" ,
 ] ,
@@ -476,6 +478,7 @@ const products = [
     isSale: false,
     images: {
       silver: [
+        "/images/ring 1.jpg",
         "/images/ring 2.jpg" ,
         "/images/ring 3.jpg",
         "/images/ring 4.jpg", 
@@ -588,7 +591,7 @@ const products = [
     isSale: false,
     images: {
       green: [
-        "/images//images/Green Kaftan with Embroidery.jpg" ,
+        "/images/Green Kaftan with Embroidery.jpg" ,
         "/images/Side Green Kaftan.jpg" ,
       ],
     },
@@ -643,7 +646,7 @@ const products = [
     isNew: false,
     isSale: false,
     images: {
-      carton: [
+      brown: [
         "/images/Carton Color Kaftan + Embroidery.png" ,
               ],
     },
@@ -656,12 +659,13 @@ const products = [
     gender: "Unisex",
     image: "/images/Awolowo Cap.jpg",
     rating: 5,
-    colors: ["Black"],
+    colors: ["Wine", "Blue", "Brown"],
     sizes: ["M", "L", "XL", "XXL"],
     isNew: false,
     isSale: false,
     images: {
-      black: [
+      blue: [
+        "/images/Awolowo Cap.jpg",
         "/images/Awolowo Cap...jpg" ,
         "/images/Awolowo Cap 8k.jpg" ,
         "/images/Awolowo Cap ..jpg" ,
@@ -719,6 +723,7 @@ const products = [
     isSale: false,
     images: {
       silver: [
+        "/images/Fossil Female Wristwatch.jpg",
         "/images/Fossil Female Wristwatch - G.jpg" ,
         "/images/Fossil Female Wristwatch - 17k.jpg" ,
         "/images/Fossil Female Wristwatch - .jpg" ,
@@ -739,6 +744,7 @@ const products = [
     isSale: false,
     images: {
       gold: [
+        "/images/Female Poedagar - 27k.jpg",
         "/images/Female Poedagar B.jpg" ,
         "/images/Female Poedagar..jpg" ,
               ],
@@ -776,6 +782,7 @@ const products = [
     isSale: false,
     images: {
       gold: [
+        "/images/Female Gold complete set...jpg",
         "/images/Female Gold complete set ,.jpg" ,
         "/images/Female Gold Complete Set.jpg" ,
       ],
@@ -789,12 +796,13 @@ const products = [
     gender: "Female",
     image: "/images/Female Cartier set - 003 3ok.jpg",
     rating: 4.6,
-    colors: ["Black"],
+    colors: ["Brown", "Purple", "Red", "Black"],
     sizes: ["M", "L", "XL", "XXL"],
     isNew: false,
     isSale: false,
     images: {
       black: [
+        "/images/Female Cartier set - 003 3ok.jpg",
         "/images/Female Cartier set - 003..jpg" ,
         "/images/Female Cartier set - 003....jpg" ,
         "/images/Female Cartier set - 003.jpg" ,
@@ -809,12 +817,13 @@ const products = [
     gender: "Female",
     image: "/images/Female Cartier set - 27k.jpg",
     rating: 4.6,
-    colors: ["Black"],
+    colors: ["Pink", "Black", "Red"],
     sizes: ["M", "L", "XL", "XXL"],
     isNew: false,
     isSale: false,
     images: {
       black: [
+        "/images/Female Cartier set - 27k.jpg",
         "/images/Female Cartier set - 002...jpg" ,
         "/images/Female Cartier set - 002..jpg" ,
         "/images/Female Cartier set - 002.jpg" ,
