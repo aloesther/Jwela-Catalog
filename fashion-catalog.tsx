@@ -2033,7 +2033,7 @@ Thank you!`
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Contact - Accessories</h4>
+              <h4 className="font-semibold mb-4">Accessories</h4>
               <ul className="space-y-2 text-muted-foreground">
                 <li>
                   <a
@@ -2068,7 +2068,7 @@ Thank you!`
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Contact - Outfits</h4>
+              <h4 className="font-semibold mb-4">Outfits</h4>
               <ul className="space-y-2 text-muted-foreground">
                 <li>
                   <a
