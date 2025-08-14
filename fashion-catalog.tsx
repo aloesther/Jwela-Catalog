@@ -84,7 +84,7 @@ const products = [
     gender: "Male",
     image: "/images/Curren 45.jpg",
     rating: 4.7,
-    colors: ["Black", "Silver", "Black", "Brown"],
+    colors: ["Black"],
     isNew: false,
     isSale: false,
     images: {
@@ -122,7 +122,7 @@ const products = [
     gender: "Male",
     image: "/images/G shock B38.jpg",
     rating: 4.8,
-    colors: ["Blue", "Green", "White"],
+    colors: ["Blue"],
     isNew: false,
     isSale: false,
     images: {
@@ -324,12 +324,12 @@ const products = [
     gender: "Unisex",
     image: "/images/Bomber jacket - .jpg",
     rating: 4.5,
-    colors: ["Red"],
+    colors: ["Black"],
     sizes: ["M", "L", "XL", "XXL"],
     isNew: false,
     isSale: false,
     images: {
-      green: [
+      black: [
         "/images/Bomber jacket - .jpg",
         "/images/Bomber jacket - G.jpg",
         "/images/Bomber jacket - R.jpg" ,
@@ -642,12 +642,12 @@ const products = [
     gender: "Unisex",
     image: "/images/Awolowo Cap.jpg",
     rating: 5,
-    colors: ["Wine"],
+    colors: ["Black"],
     sizes: ["M", "L", "XL", "XXL"],
     isNew: false,
     isSale: false,
     images: {
-      blue: [
+      black: [
         "/images/Awolowo Cap.jpg",
         "/images/Awolowo Cap...jpg" ,
         "/images/Awolowo Cap 8k.jpg" ,
@@ -784,7 +784,7 @@ const products = [
     isNew: false,
     isSale: false,
     images: {
-      black: [
+      brown: [
         "/images/Female Cartier set - 003 3ok.jpg",
         "/images/Female Cartier set - 003..jpg" ,
         "/images/Female Cartier set - 003....jpg" ,
@@ -800,7 +800,7 @@ const products = [
     gender: "Female",
     image: "/images/Female Cartier set - 27k.jpg",
     rating: 4.6,
-    colors: ["Pink"],
+    colors: ["Black"],
     sizes: ["M", "L", "XL", "XXL"],
     isNew: false,
     isSale: false,
