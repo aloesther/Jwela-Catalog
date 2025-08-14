@@ -64,7 +64,7 @@ const products = [
     gender: "Unisex",
     image: "/images/Casio Illuminator - 25.jpg",
     rating: 4.6,
-    colors: ["Black", "Gold", "Silver"],
+    colors: ["Black"],
     isNew: false,
     isSale: false,
     images: {
@@ -84,7 +84,7 @@ const products = [
     gender: "Male",
     image: "/images/Curren 45.jpg",
     rating: 4.7,
-    colors: ["Black", "White", "Brown", "Silver"],
+    colors: ["Black"],
     isNew: false,
     isSale: false,
     images: {
@@ -122,7 +122,7 @@ const products = [
     gender: "Male",
     image: "/images/G shock B38.jpg",
     rating: 4.8,
-    colors: ["Blue", "Green", "White"],
+    colors: ["Blue"],
     isNew: false,
     isSale: false,
     images: {
@@ -159,7 +159,7 @@ const products = [
     gender: "Male",
     image: "/images/Leather Peodagar B25.jpg",
     rating: 4.5,
-    colors: ["Black", "Brown", "Brown"],
+    colors: ["Black"],
     isNew: false,
     isSale: false,
     images: {
@@ -194,7 +194,7 @@ const products = [
     gender: "Male",
     image: "/images/Patek Philippe 24.jpg",
     rating: 4.7,
-    colors: ["Silver", "Silver"],
+    colors: ["Silver"],
     isNew: false,
     isSale: false,
     images: {
@@ -212,7 +212,7 @@ const products = [
     gender: "Male",
     image: "/images/Patex Philippe 25.jpg",
     rating: 4.3,
-    colors: ["Blue", "Black"],
+    colors: ["Black"],
     isNew: false,
     isSale: false,
     images: {
@@ -251,7 +251,7 @@ const products = [
     gender: "Male",
     image: "/images/Poedagar S25.jpg",
     rating: 4.8,
-    colors: ["Black", "Gold"],
+    colors: ["Black"],
     isNew: false,
     isSale: false,
     images: {
@@ -269,7 +269,7 @@ const products = [
     gender: "Male",
     image: "/images/Poedagar 25.jpg",
     rating: 4.8,
-    colors: ["Silver", "Gold"],
+    colors: ["Silver"],
     isNew: false,
     isSale: false,
     images: {
@@ -324,7 +324,7 @@ const products = [
     gender: "Unisex",
     image: "/images/Bomber jacket - .jpg",
     rating: 4.5,
-    colors: ["Red", "Green"],
+    colors: ["Red"],
     sizes: ["M", "L", "XL", "XXL"],
     isNew: false,
     isSale: false,
@@ -642,7 +642,7 @@ const products = [
     gender: "Unisex",
     image: "/images/Awolowo Cap.jpg",
     rating: 5,
-    colors: ["Wine", "Blue", "Brown"],
+    colors: ["Wine"],
     sizes: ["M", "L", "XL", "XXL"],
     isNew: false,
     isSale: false,
@@ -779,7 +779,7 @@ const products = [
     gender: "Female",
     image: "/images/Female Cartier set - 003 3ok.jpg",
     rating: 4.6,
-    colors: ["Brown", "Purple", "Red", "Black"],
+    colors: ["Brown"],
     sizes: ["M", "L", "XL", "XXL"],
     isNew: false,
     isSale: false,
@@ -800,7 +800,7 @@ const products = [
     gender: "Female",
     image: "/images/Female Cartier set - 27k.jpg",
     rating: 4.6,
-    colors: ["Pink", "Black", "Red"],
+    colors: ["Pink"],
     sizes: ["M", "L", "XL", "XXL"],
     isNew: false,
     isSale: false,
@@ -1890,17 +1890,24 @@ Thank you!`
             {/* Accessories Sizes */}
             <div>
               <h3 className="text-lg font-semibold mb-4">Accessories</h3>
-              {/* Watch Sizes */}
+              {/* Ring Sizes */}
               <div className="mb-4">
-                <h4 className="font-medium mb-3">Watch Sizes</h4>
+                <h4 className="font-medium mb-3">Ring Sizes</h4>
                 <div className="bg-blue-50 p-4 rounded-lg">
                   <p className="text-sm text-blue-800 mb-2">
-                    <strong>Wrist Measurement Guide:</strong>
+                    <strong>Finger Measurement Guide:</strong>
                   </p>
                   <ul className="text-sm text-blue-700 space-y-1">
-                    <li>• Small: 5.5" - 6.5" (14cm - 16.5cm)</li>
-                    <li>• Medium: 6.5" - 7.5" (16.5cm - 19cm)</li>
-                    <li>• Large: 7.5" - 8.5" (19cm - 21.5cm)</li>
+                    <li>• Size 5 (5cm)</li>
+                    <li>• Size 6 (5.5cm)</li>
+                    <li>• Size 7 (6cm)</li>
+                    <li>• Size 8 (6.5cm)</li>
+                    <li>• Size 9 (7cm)</li>
+                    <li>• Size 10 (7.5cm)</li>
+                    <li>• Size 11 (8cm)</li>
+                    <li>• Size 12 (8.5cm)</li>
+                    <li>• Size 13 (9cm)</li>
+                    <li>• Size 14 (9.5cm)</li>
                   </ul>
                   <p className="text-xs text-blue-600 mt-2">
                     Most of our watches come with adjustable straps to fit various wrist sizes.
@@ -2046,7 +2053,7 @@ Thank you!`
                     className="flex items-center gap-2 text-green-600 hover:text-green-700 transition-colors underline text-sm"
                   >
                     <MessageCircle className="h-4 w-4" />
-                    WhatsApp (+234 806 714 2622)
+                    (+234 806 714 2622)
                   </button>
                 </li>
               </ul>
@@ -2081,7 +2088,7 @@ Thank you!`
                     className="flex items-center gap-2 text-green-600 hover:text-green-700 transition-colors underline text-sm"
                   >
                     <MessageCircle className="h-4 w-4" />
-                    WhatsApp (+234 816 906 1610)
+                    (+234 816 906 1610)
                   </button>
                 </li>
               </ul>
