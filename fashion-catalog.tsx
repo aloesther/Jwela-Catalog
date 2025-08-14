@@ -2010,7 +2010,7 @@ Thank you!`
       {/* Footer */}
       <footer className="bg-slate-50 mt-16">
         <div className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             <div className="sm:col-span-2 lg:col-span-1">
               <h3 className="font-bold text-lg mb-4">JWELA</h3>
               <p className="text-muted-foreground">
