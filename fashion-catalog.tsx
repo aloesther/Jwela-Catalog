@@ -633,26 +633,9 @@ const products = [
               ],
     },
   },
+
          {
     id: 34,
-    name: "Carton Color Kaftan + Embroidery",
-    price: 50000,
-    category: "Outfits",
-    gender: "Male",
-    image: "/images/Carton Color Kaftan + Embroidery.png",
-    rating: 4.5,
-    colors: ["Carton"],
-    sizes: ["M", "L", "XL", "XXL"],
-    isNew: false,
-    isSale: false,
-    images: {
-      brown: [
-        "/images/Carton Color Kaftan + Embroidery.png" ,
-              ],
-    },
-  },
-         {
-    id: 35,
     name: "Awolowo Cap",
     price: 8000,
     category: "Outfits",
@@ -674,7 +657,7 @@ const products = [
     },
   },
          {
-    id: 36,
+    id: 35,
     name: "Aso Oke - Short & Jacket",
     price: 50000,
     category: "Unisex",
@@ -692,7 +675,7 @@ const products = [
     },
   },
          {
-    id: 37,
+    id: 36,
     name: "Dark Peach Agbada",
     price: 150000,
     category: "Outfits",
@@ -710,7 +693,7 @@ const products = [
     },
   },
          {
-    id: 38,
+    id: 37,
     name: "Fossil Female Wristwatch",
     price: 17000,
     category: "Accessories",
@@ -731,7 +714,7 @@ const products = [
     },
   },
          {
-    id: 39,
+    id: 38,
     name: "Female Poedagar Wristwatch",
     price: 27000,
     category: "Accessories",
@@ -751,7 +734,7 @@ const products = [
     },
   },
          {
-    id: 40,
+    id: 39,
     name: "Gold Jewelry set - 001",
     price: 38000,
     category: "Accessories",
@@ -769,7 +752,7 @@ const products = [
     },
   },
          {
-    id: 41,
+    id: 40,
     name: "Gold Jewelry set - 002",
     price: 38000,
     category: "Accessories",
@@ -789,7 +772,7 @@ const products = [
           },
   },
          {
-    id: 42,
+    id: 41,
     name: "Cartier Jewelry set - 003",
     price: 30000,
     category: "Accessories",
@@ -810,7 +793,7 @@ const products = [
           },
   },
          {
-    id: 43,
+    id: 42,
     name: "Cartier Jewelry set - 002",
     price: 27000,
     category: "Accessories",
@@ -2047,51 +2030,10 @@ Thank you!`
                     Size Guide
                   </button>
                 </li>
-                <li>
-                  <div className="space-y-1">
-                    <p className="font-medium text-foreground">Contact</p>
-                    <div className="text-sm space-y-1">
-                      <button
-                        onClick={() => {
-                          const message =
-                            "Hello! I'm interested in your accessories. Can you help me with more information?"
-                          const accessoriesWhatsApp = `https://wa.me/2348169061610?text=${encodeURIComponent(message)}`
-                          window.open(accessoriesWhatsApp, "_blank")
-                          toast({
-                            title: "Opening WhatsApp",
-                            description: "Accessories support",
-                            duration: 2000,
-                          })
-                        }}
-                        className="block text-green-600 hover:text-green-700 transition-colors underline text-sm"
-                      >
-                        <MessageCircle className="h-4 w-4" />                        
-                        Accessories (+234 8169061610)
-                      </button>
-                      <button
-                        onClick={() => {
-                          const message =
-                            "Hello! I'm interested in your outfits. Can you help me with more information?"
-                          const outfitsWhatsApp = `https://wa.me/2348067142622?text=${encodeURIComponent(message)}`
-                          window.open(outfitsWhatsApp, "_blank")
-                          toast({
-                            title: "Opening WhatsApp",
-                            description: "Outfits support",
-                            duration: 2000,
-                          })
-                        }}
-                        className="block text-green-600 hover:text-green-700 transition-colors underline text-sm"
-                      >
-                       <MessageCircle className="h-4 w-4" />                      
-                       Outfits (+234 8067142622)
-                      </button>
-                    </div>
-                  </div>
-                </li>
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Accessories</h4>
+              <h4 className="font-semibold mb-4">Contact - Accessories</h4>
               <ul className="space-y-2 text-muted-foreground">
                 <li>
                   <a
@@ -2126,7 +2068,7 @@ Thank you!`
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Outfits</h4>
+              <h4 className="font-semibold mb-4">Contact - Outfits</h4>
               <ul className="space-y-2 text-muted-foreground">
                 <li>
                   <a
