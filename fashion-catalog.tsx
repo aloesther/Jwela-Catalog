@@ -70,12 +70,9 @@ const products = [
     images: {
       black: [
         "/images/Casio Illuminator - 25.jpg",
-      ],
-      gold: ["/images/Casio Illuminator G.jpg" ,
-      ],
-      black: [ "/images/Casio Illuminator G25.jpg",
-      ],
-      silver: ["/images/Casio Illuminator S25.jpg" ,
+        "/images/Casio Illuminator G.jpg" ,
+        "/images/Casio Illuminator G25.jpg",
+        "/images/Casio Illuminator S25.jpg" ,
       ],
     },
   },
@@ -92,15 +89,9 @@ const products = [
     isSale: false,
     images: {
       "Black": [
-        "/images/Curren Bb45.jpg",
-      ],
-      "Black": [
+        "/images/Curren Bb45.jpg",     
         "/images/Curren B45.jpg" ,
-         ],
-      "Brown": [
         "/images/Curren 45.jpg" ,
-         ],
-      "Brown": [
         "/images/Curren Br45.jpg" ,
       ],
     },
@@ -137,11 +128,7 @@ const products = [
     images: {
       "black": [
         "/images/G shock B38.jpg",
-      ],
-      gold: [
         "/images/G shock G38.jpg",
-      ],
-      white: [
         "/images/G shock W38.jpg",
     
       ],
@@ -178,11 +165,6 @@ const products = [
     images: {
       black: [
         "/images/Leather Peodagar B25.jpg",
-      ],
-      brown: [
-        "/images/Leather Peodagar BR.25.jpg",
-            ],
-      brown: [
         "/images/Leather Peodagar BR25.jpg",
       ],
     },
@@ -218,8 +200,6 @@ const products = [
     images: {
       silver: [
         "/images/Patek Philippe 24.jpg",
-      ],
-      silver: [
         "/images/Patek Philippe S24.jpg",
       ],
     },
@@ -241,11 +221,7 @@ const products = [
       ],
       blue: [
         "/images/Patex Philippe B25.jpg",
-      ],
-      black: [
         "/images/Patex Philippe S25.jpg",
-              ],
-      black: [
         "/images/Patex Philippe bb25.jpg",
       ],
     },
@@ -256,14 +232,15 @@ const products = [
     price: 25000,
     category: "Accessories",
     gender: "Male",
-    image: "/images/Poedagar .25.jpg",
+    image: "/images/Poedagar .25..jpg",
     rating: 4.6,
     colors: ["Silver"],
     isNew: false,
     isSale: false,
     images: {
       silver: [
-        "/images/Poedagar .25.jpg",
+        "/images/Poedagar .25...jpg",
+        "/images/Poedagar .25.....jpg" ,
       ],
     },
   },
@@ -279,10 +256,8 @@ const products = [
     isNew: false,
     isSale: false,
     images: {
-      black: ["images/Poedagar B25.jpg"
-              ],
-      gold: [
-        "/images/Poedagar R25.jpg",
+      black: ["images/Poedagar B25.jpg",
+              "/images/Poedagar R25.jpg",
       ],
     },
   },
@@ -300,8 +275,7 @@ const products = [
     images: {
       silver: [ "/images/Poedagar ss25.jpg" ,
         "/images/Poedagar sss25.jpg" ,
-              ],
-        gold: ["/images/Poedagar Rs25.jpg"
+        "/images/Poedagar Rs25.jpg" ,
         ],
     },
   },
@@ -393,7 +367,7 @@ const products = [
     images: {
       blue: [
         "/images/Blue Kaftan.jpg",
-        "/images/Blue kaftan (2).jpg"
+        "/images/Blue kaftan (2).jpg" ,
       ],
     },
   },
@@ -466,7 +440,7 @@ const products = [
     images: {
       green: [
         "/images/Green Agbada.jpg" ,
-        "/images/Green Agbada (2).jpg"
+        "/images/Green Agbada (2).jpg" ,
       ],
     },
   },
@@ -627,15 +601,243 @@ const products = [
     gender: "Male",
     image: "/images/Blue Striped Kaftan.png",
     rating: 4.5,
-    colors: ["Green"],
+    colors: ["Blue"],
     sizes: ["M", "L", "XL", "XXL"],
     isNew: false,
     isSale: false,
     images: {
-      green: [
+      blue: [
         "/images/Blue Striped Kaftan.png" ,
         "/images/Blue Striped.png" ,
+              ],
+    },
+  },
+         {
+    id: 33,
+    name: "Cream Shirt",
+    price: 20000,
+    category: "Outfits",
+    gender: "Unisex",
+    image: "/images/Cream Shirt.jpg",
+    rating: 4.5,
+    colors: ["Cream"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      cream: [
+        "/images/Cream Shirt.jpg" ,
+              ],
+    },
+  },
+         {
+    id: 34,
+    name: "Carton Color Kaftan + Embroidery",
+    price: 50000,
+    category: "Outfits",
+    gender: "Male",
+    image: "/images/Carton Color Kaftan + Embroidery.png",
+    rating: 4.5,
+    colors: ["Carton"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      carton: [
+        "/images/Carton Color Kaftan + Embroidery.png" ,
+              ],
+    },
+  },
+         {
+    id: 35,
+    name: "Awolowo Cap",
+    price: 8000,
+    category: "Outfits",
+    gender: "Unisex",
+    image: "/images/Awolowo Cap.jpg",
+    rating: 5,
+    colors: ["Black"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      black: [
+        "/images/Awolowo Cap...jpg" ,
+        "/images/Awolowo Cap 8k.jpg" ,
+        "/images/Awolowo Cap ..jpg" ,
+
+              ],
+    },
+  },
+         {
+    id: 36,
+    name: "Aso Oke - Short & Jacket",
+    price: 50000,
+    category: "Unisex",
+    gender: "Male",
+    image: "/images/Aso Oke - Short & Jacket.jpg",
+    rating: 4.8,
+    colors: ["Brown"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      brown: [
+        "/images/Aso Oke - Short & Jacket.jpg" ,
+              ],
+    },
+  },
+         {
+    id: 37,
+    name: "Dark Peach Agbada",
+    price: 150000,
+    category: "Outfits",
+    gender: "Male",
+    image: "/images/Dark Peach Agbada.jpg",
+    rating: 4.5,
+    colors: ["Brown"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      brown: [
+        "/images/Dark Peach Agbada.jpg" ,
+              ],
+    },
+  },
+         {
+    id: 38,
+    name: "Fossil Female Wristwatch",
+    price: 17000,
+    category: "Accessories",
+    gender: "Female",
+    image: "/images/Fossil Female Wristwatch.jpg",
+    rating: 4.5,
+    colors: ["Silver"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      silver: [
+        "/images/Fossil Female Wristwatch - G.jpg" ,
+        "/images/Fossil Female Wristwatch - 17k.jpg" ,
+        "/images/Fossil Female Wristwatch - .jpg" ,
+              ],
+    },
+  },
+         {
+    id: 39,
+    name: "Female Poedagar Wristwatch",
+    price: 27000,
+    category: "Accessories",
+    gender: "Female",
+    image: "/images/Female Poedagar - 27k.jpg",
+    rating: 4.7,
+    colors: ["Gold"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      gold: [
+        "/images/Female Poedagar B.jpg" ,
+        "/images/Female Poedagar..jpg" ,
+              ],
+    },
+  },
+         {
+    id: 40,
+    name: "Gold Jewelry set - 001",
+    price: 38000,
+    category: "Accessories",
+    gender: "Female",
+    image: "/images/Female Gold set - 38k.jpg",
+    rating: 4.5,
+    colors: ["Gold"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      gold: [
+        "/images/Female Gold set - 38k.jpg" ,
+              ],
+    },
+  },
+         {
+    id: 41,
+    name: "Gold Jewelry set - 002",
+    price: 38000,
+    category: "Accessories",
+    gender: "Female",
+    image: "/images/Female Gold complete set...jpg",
+    rating: 4.6,
+    colors: ["Gold"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      gold: [
+        "/images/Female Gold complete set ,.jpg" ,
+        "/images/Female Gold Complete Set.jpg" ,
       ],
+          },
+  },
+         {
+    id: 42,
+    name: "Cartier Jewelry set - 003",
+    price: 30000,
+    category: "Accessories",
+    gender: "Female",
+    image: "/images/Female Cartier set - 003 3ok.jpg",
+    rating: 4.6,
+    colors: ["Black"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      black: [
+        "/images/Female Cartier set - 003..jpg" ,
+        "/images/Female Cartier set - 003....jpg" ,
+        "/images/Female Cartier set - 003.jpg" ,
+        ]
+          },
+  },
+         {
+    id: 43,
+    name: "Cartier Jewelry set - 002",
+    price: 27000,
+    category: "Accessories",
+    gender: "Female",
+    image: "/images/Female Cartier set - 27k.jpg",
+    rating: 4.6,
+    colors: ["Black"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      black: [
+        "/images/Female Cartier set - 002...jpg" ,
+        "/images/Female Cartier set - 002..jpg" ,
+        "/images/Female Cartier set - 002.jpg" ,
+        ]
+          },
+  },
+         {
+    id: 43,
+    name: "Gold Cartier Jewelry set",
+    price: 38000,
+    category: "Accessories",
+    gender: "Female",
+    image: "/images/Female Cartier Complete Set.jpg",
+    rating: 4.6,
+    colors: ["Gold"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      gold: [
+        "/images/Female Cartier Complete Set.jpg" ,
+        ]
+
     },
   },
 ]
