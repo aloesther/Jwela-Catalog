@@ -84,7 +84,7 @@ const products = [
     gender: "Male",
     image: "/images/Curren 45.jpg",
     rating: 4.7,
-    colors: ["Black"],
+    colors: ["Black", "Silver", "Black", "Brown"],
     isNew: false,
     isSale: false,
     images: {
@@ -122,7 +122,7 @@ const products = [
     gender: "Male",
     image: "/images/G shock B38.jpg",
     rating: 4.8,
-    colors: ["Blue"],
+    colors: ["Blue", "Green", "White"],
     isNew: false,
     isSale: false,
     images: {
@@ -159,7 +159,7 @@ const products = [
     gender: "Male",
     image: "/images/Leather Peodagar B25.jpg",
     rating: 4.5,
-    colors: ["Black"],
+    colors: ["Black", "Brown"],
     isNew: false,
     isSale: false,
     images: {
@@ -1910,7 +1910,6 @@ Thank you!`
                     <li>• Size 14 (9.5cm)</li>
                   </ul>
                   <p className="text-xs text-blue-600 mt-2">
-                    Most of our watches come with adjustable straps to fit various wrist sizes.
                   </p>
                 </div>
               </div>
@@ -2053,7 +2052,7 @@ Thank you!`
                     className="flex items-center gap-2 text-green-600 hover:text-green-700 transition-colors underline text-sm"
                   >
                     <MessageCircle className="h-4 w-4" />
-                    (+234 806 714 2622)
+                    +234 806 714 2622
                   </button>
                 </li>
               </ul>
@@ -2088,7 +2087,7 @@ Thank you!`
                     className="flex items-center gap-2 text-green-600 hover:text-green-700 transition-colors underline text-sm"
                   >
                     <MessageCircle className="h-4 w-4" />
-                    (+234 816 906 1610)
+                    +234 816 906 1610
                   </button>
                 </li>
               </ul>
