@@ -2010,8 +2010,8 @@ Thank you!`
       {/* Footer */}
       <footer className="bg-slate-50 mt-16">
         <div className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="sm:col-span-2 lg:col-span-1">
               <h3 className="font-bold text-lg mb-4">JWELA</h3>
               <p className="text-muted-foreground">
                 Premium apparel and accessories brand focused on quality, style, and sustainability.
@@ -2062,7 +2062,7 @@ Thank you!`
                     className="flex items-center gap-2 text-green-600 hover:text-green-700 transition-colors underline text-sm"
                   >
                     <MessageCircle className="h-4 w-4" />
-                    +234 816 906 1610
+                    WhatsApp (+234 816 906 1610)
                   </button>
                 </li>
               </ul>
@@ -2096,7 +2096,7 @@ Thank you!`
                     className="flex items-center gap-2 text-green-600 hover:text-green-700 transition-colors underline text-sm"
                   >
                     <MessageCircle className="h-4 w-4" />
-                    +234 806 714 2622
+                    WhatsApp (+234 806 714 2622)
                   </button>
                 </li>
               </ul>
