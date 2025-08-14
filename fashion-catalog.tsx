@@ -1880,29 +1880,71 @@ Thank you!`
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Connect</h4>
+              <h4 className="font-semibold mb-4">Accessories</h4>
               <ul className="space-y-2 text-muted-foreground">
                 <li>
                   <a
                     href="https://www.instagram.com/jwela.shop?utm_source=ig_web_button_share_sheet&igsh=MWo4b2Zwemo5OXdzeg=="
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-pink-600 transition-colors"
+                    className="flex items-center gap-2 hover:text-pink-600 transition-colors"
                   >
-                   <Instagram className="h-4 w-4" />                       
-                    @jwela.shop (Accessories)
+                    <Instagram className="h-4 w-4" />
+                    @jwela.shop
                   </a>
                 </li>
+                <li>
+                  <button
+                    onClick={() => {
+                      const message =
+                        "Hello! I'm interested in your accessories. Can you help me with more information?"
+                      const accessoriesWhatsApp = `https://wa.me/2348169061610?text=${encodeURIComponent(message)}`
+                      window.open(accessoriesWhatsApp, "_blank")
+                      toast({
+                        title: "Opening WhatsApp",
+                        description: "Accessories support",
+                        duration: 2000,
+                      })
+                    }}
+                    className="flex items-center gap-2 text-green-600 hover:text-green-700 transition-colors underline text-sm"
+                  >
+                    <MessageCircle className="h-4 w-4" />
+                    +234 816 906 1610
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4">Outfits</h4>
+              <ul className="space-y-2 text-muted-foreground">
                 <li>
                   <a
                     href="https://www.instagram.com/jwela.apparel?utm_source=ig_web_button_share_sheet&igsh=c3A5cHMwODl4djB4"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-pink-600 transition-colors"
+                    className="flex items-center gap-2 hover:text-pink-600 transition-colors"
                   >
-                   <Instagram className="h-4 w-4" />                       
-                    @jwela.apparel (Outfits)
+                    <Instagram className="h-4 w-4" />
+                    @jwela.apparel
                   </a>
+                </li>
+                <li>
+                  <button
+                    onClick={() => {
+                      const message = "Hello! I'm interested in your outfits. Can you help me with more information?"
+                      const outfitsWhatsApp = `https://wa.me/2348067142622?text=${encodeURIComponent(message)}`
+                      window.open(outfitsWhatsApp, "_blank")
+                      toast({
+                        title: "Opening WhatsApp",
+                        description: "Outfits support",
+                        duration: 2000,
+                      })
+                    }}
+                    className="flex items-center gap-2 text-green-600 hover:text-green-700 transition-colors underline text-sm"
+                  >
+                    <MessageCircle className="h-4 w-4" />
+                    +234 806 714 2622
+                  </button>
                 </li>
               </ul>
             </div>
