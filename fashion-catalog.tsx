@@ -827,7 +827,7 @@ const products = [
     isSale: false,
     images: {
       black: [
-        "/images/Black Kaften + Embroidery.jpg" ,
+        "/images/Black Kaften.jpg" ,
         ]
           },
   },
@@ -873,7 +873,7 @@ const products = [
     price: 40000,
     category: "Outfits",
     gender: "Male",
-    image: "/images/Carton Color Kaftan + Embroidery - Long sleeve.jpg",
+    image: "/images/Carton Color Kaftan  - Long sleeve.jpg",
     rating: 4.8,
     colors: ["Carton"],
     sizes: ["M", "L", "XL", "XXL"],
@@ -881,7 +881,7 @@ const products = [
     isSale: false,
     images: {
       carton: [
-        "/images/Carton Color Kaftan + Embroidery - Long sleeve.jpg",
+        "/images/Carton Color Kaftan  - Long sleeve.jpg",
         ]
           },
   },
@@ -945,7 +945,7 @@ const products = [
     price: 50000,
     category: "Outfits",
     gender: "Male",
-    image: "/images/Off white Kaftan + Embroidery.jpg",
+    image: "/images/Off white Kaftan.jpg",
     rating: 4.8,
     colors: ["Off_white"],
     sizes: ["M", "L", "XL", "XXL"],
@@ -953,7 +953,7 @@ const products = [
     isSale: false,
     images: {
       white: [
-        "/images/Off white Kaftan + Embroidery.jpg" ,
+        "/images/Off white Kaftan.jpg" ,
         ]
           },
   },
@@ -963,7 +963,7 @@ const products = [
     price: 40000,
     category: "Outfits",
     gender: "Male",
-    image: "/images/White Kaftan + Embroidery.jpg",
+    image: "/images/White Kaftan.jpg",
     rating: 4.6,
     colors: ["White"],
     sizes: ["M", "L", "XL", "XXL"],
@@ -971,7 +971,7 @@ const products = [
     isSale: false,
     images: {
       white: [
-        "/images/White Kaftan + Embroidery.jpg" ,
+        "/images/White Kaftan.jpg" ,
         ]
           },
   },
