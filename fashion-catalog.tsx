@@ -819,7 +819,7 @@ const products = [
     price: 50000,
     category: "Outfits",
     gender: "Male",
-    image: "/images/Black Kaften + Embroidery.jpg",
+    image: "/images/Black Kaften.jpg",
     rating: 4.6,
     colors: ["Black"],
     sizes: ["M", "L", "XL", "XXL"],
