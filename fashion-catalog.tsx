@@ -339,7 +339,7 @@ const products = [
     {
     id: 18,
     name: "Black Kaftan with Embroidery",
-    price: 60000,
+    price: 50000,
     category: "Outfits",
     gender: "Male",
     image: "/images/Black kaftan.jpg",
@@ -357,7 +357,7 @@ const products = [
     {
     id: 19,
     name: "Blue Kaftan with Embroidery",
-    price: 60000,
+    price: 50000,
     category: "Outfits",
     gender: "Male",
     image: "/images/Blue Kaftan.jpg",
@@ -488,7 +488,7 @@ const products = [
          {
     id: 26,
     name: "Blue Kaftan",
-    price: 60000,
+    price: 50000,
     category: "Outfits",
     gender: "Male",
     image: "/images/Blue kaftan (3).jpg",
@@ -506,7 +506,7 @@ const products = [
          {
     id: 27,
     name: "Cream Kaftan with Embroidery",
-    price: 60000,
+    price: 50000,
     category: "Outfits",
     gender: "Male",
     image: "/images/Cream color kaftan.jpg",
@@ -599,7 +599,7 @@ const products = [
          {
     id: 32,
     name: "Navy Blue Striped Kaftan",
-    price: 50000,
+    price: 40000,
     category: "Outfits",
     gender: "Male",
     image: "/images/Blue Striped Kaftan.png",
@@ -834,7 +834,7 @@ const products = [
            {
     id: 44,
     name: "Brown Complete Agbada 001",
-    price: 120,000,
+    price: 120000,
     category: "Outfits",
     gender: "Male",
     image: "/images/Brown Complete Agbada 001.jpg",
