@@ -815,7 +815,7 @@ const products = [
   },
            {
     id: 43,
-    name: "Black Kaften + Embroidery",
+    name: "Black Kaften with Embroidery",
     price: 50000,
     category: "Outfits",
     gender: "Male",
@@ -869,7 +869,7 @@ const products = [
   },
            {
     id: 46,
-    name: "Carton Color Kaftan + Embroidery - Long sleeve",
+    name: "Carton Color Kaftan with Embroidery - Long sleeve",
     price: 40000,
     category: "Outfits",
     gender: "Male",
@@ -880,7 +880,7 @@ const products = [
     isNew: false,
     isSale: false,
     images: {
-      brown: [
+      carton: [
         "/images/Carton Color Kaftan + Embroidery - Long sleeve.jpg",
         ]
           },
@@ -941,7 +941,7 @@ const products = [
   },
              {
     id: 50,
-    name: "Off white Kaftan + Embroidery",
+    name: "Off white Kaftan with Embroidery",
     price: 50000,
     category: "Outfits",
     gender: "Male",
@@ -959,7 +959,7 @@ const products = [
   },
              {
     id: 51,
-    name: "White Kaftan + Embroidery",
+    name: "White Kaftan with Embroidery",
     price: 40000,
     category: "Outfits",
     gender: "Male",
