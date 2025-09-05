@@ -660,8 +660,8 @@ const products = [
     id: 35,
     name: "Aso Oke - Short & Jacket",
     price: 50000,
-    category: "Unisex",
-    gender: "Male",
+    category: "Outfits",
+    gender: "Unisex",
     image: "/images/Aso Oke - Short & Jacket.jpg",
     rating: 4.8,
     colors: ["Brown"],
@@ -813,8 +813,171 @@ const products = [
         ]
           },
   },
-         {
+           {
     id: 43,
+    name: "Black Kaften + Embroidery",
+    price: 50000,
+    category: "Outfits",
+    gender: "Male",
+    image: "/images/Black Kaften + Embroidery.jpg",
+    rating: 4.6,
+    colors: ["Black"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      black: [
+        "/images/Black Kaften + Embroidery.jpg" ,
+        ]
+          },
+  },
+           {
+    id: 44,
+    name: "Brown Complete Agbada 001",
+    price: 120,000,
+    category: "Outfits",
+    gender: "Male",
+    image: "/images/Brown Complete Agbada 001.jpg",
+    rating: 4.8,
+    colors: ["Brown"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      brown: [
+        "/images/Brown Complete Agbada 001.jpg" ,
+        ]
+          },
+  },
+           {
+    id: 45,
+    name: "Brown Complete Agbada 002",
+    price: 120000,
+    category: "Outfits",
+    gender: "Male",
+    image: "/images/Brown Complete Agbada 002.jpg",
+    rating: 4.7,
+    colors: ["Brown"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      brown: [
+        "/images/Brown Complete Agbada 002.jpg" ,
+        ]
+          },
+  },
+           {
+    id: 46,
+    name: "Carton Color Kaftan + Embroidery - Long sleeve",
+    price: 40000,
+    category: "Outfits",
+    gender: "Male",
+    image: "/images/Carton Color Kaftan + Embroidery - Long sleeve.jpg",
+    rating: 4.8,
+    colors: ["Carton"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      brown: [
+        "/images/Carton Color Kaftan + Embroidery - Long sleeve.jpg",
+        ]
+          },
+  },
+           {
+    id: 47,
+    name: "Chidren White Kaftan",
+    price: 20000,
+    category: "Outfits",
+    gender: "Male",
+    image: "/images/Chidren White Kaftan.jpg",
+    rating: 4.7,
+    colors: ["White"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      white: [
+        "/images/Chidren White Kaftan.jpg",
+        ]
+          },
+  },
+           {
+    id: 48,
+    name: "Pants",
+    price: 20000,
+    category: "Outfits",
+    gender: "Unisex",
+    image: "/images/Copilot_20250712_124022.png",
+    rating: 4.6,
+    colors: ["Black", "Blue", "Brown", "Ash"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      black: [
+        "/images/Copilot_20250712_124022.png" ,
+        ]
+          },
+  },
+           {
+    id: 49,
+    name: "Gold Kaftan",
+    price: 40000,
+    category: "Outfits",
+    gender: "Male",
+    image: "/images/Gold Kaftan.jpg",
+    rating: 4.6,
+    colors: ["Gold"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      gold: [
+        "/images/Gold Kaftan.jpg" ,
+        ]
+          },
+  },
+             {
+    id: 50,
+    name: "Off white Kaftan + Embroidery",
+    price: 50000,
+    category: "Outfits",
+    gender: "Male",
+    image: "/images/Off white Kaftan + Embroidery.jpg",
+    rating: 4.8,
+    colors: ["Off_white"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      white: [
+        "/images/Off white Kaftan + Embroidery.jpg" ,
+        ]
+          },
+  },
+             {
+    id: 51,
+    name: "White Kaftan + Embroidery",
+    price: 40000,
+    category: "Outfits",
+    gender: "Male",
+    image: "/images/White Kaftan + Embroidery.jpg",
+    rating: 4.6,
+    colors: ["White"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      white: [
+        "/images/White Kaftan + Embroidery.jpg" ,
+        ]
+          },
+  },
+  
+         {
+    id: 52,
     name: "Gold Cartier Jewelry set",
     price: 38000,
     category: "Accessories",
