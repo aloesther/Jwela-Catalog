@@ -227,7 +227,7 @@ const products = [
   {
     id: 12,
     name: "Poedagar Wristwatch - 001",
-    price: 25000,
+    price: 27000,
     category: "Accessories",
     gender: "Male",
     image: "/images/Poedagar .25..jpg",
