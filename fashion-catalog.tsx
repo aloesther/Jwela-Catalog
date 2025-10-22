@@ -257,6 +257,7 @@ const products = [
     images: {
       black: ["/images/Poedagar S25.jpg",
               "images/Poedagar B25.jpg",
+              "/images/Poedagar Wristwatch - G 002.jpg" ,
               "/images/Poedagar R25.jpg",
       ],
     },
@@ -1088,7 +1089,113 @@ const products = [
       white: [
         "/images/White Embroidery Kaftan.jpg" ,
         ]
-     
+    },
+  },
+    {
+    id: 58,
+    name: "Audemars Piguet - 001",
+    price: 25000,
+    category: "Accessories",
+    gender: "Male",
+    image: "/images/Audemars Piguet - Gb25k.jpg",
+    rating: 4.8,
+    colors: ["Gold"],
+    isNew: false,
+    isSale: false,
+    images: {
+      gold: ["/images/Audemars Piguet - Gb25k.jpg",
+              "/images/Audemars Piguete - Gbl.jpg",
+              "/images/Audemars Piguete -Gg.jpg" ,
+              "/images/Audemars Piguete -Gw.jpg",
+      ]
+     },
+  },
+    {
+    id: 59,
+    name: "Audemars Piguet - 002",
+    price: 25000,
+    category: "Accessories",
+    gender: "Male",
+    image: "/images/Audemars Piguete -Black25k.jpg",
+    rating: 4.8,
+    colors: ["Black"],
+    isNew: false,
+    isSale: false,
+    images: {
+      black: ["/images/Audemars Piguete -Black25k.jpg",
+            
+      ]
+     },
+  },
+    {
+    id: 60,
+    name: "Audemars Piguet - 003",
+    price: 25000,
+    category: "Accessories",
+    gender: "Male",
+    image: "/images/Audemars Piguete -sb.jpg",
+    rating: 4.8,
+    colors: ["Silver"],
+    isNew: false,
+    isSale: false,
+    images: {
+      silver: ["/images/Audemars Piguete -sb.jpg",
+              "/images/Audemars Piguete -sbl.jpg",
+              "/images/Audemars Piguete -sg.jpg" ,
+      ]
+    },
+  },
+    {
+    id: 61,
+    name: "Michael Kors - 001",
+    price: 20000,
+    category: "Accessories",
+    gender: "Female",
+    image: "/images/Michael Kors - G20k f.jpg",
+    rating: 4.8,
+    colors: ["Gold"],
+    isNew: false,
+    isSale: false,
+    images: {
+      gold: ["/images/Michael Kors - G20k f.jpg",
+              "/images/Michael Kors -Gr.jpg",
+              "/images/Michael Kors -Gw.jpg" ,
+      ]
+    },
+  },
+    {
+    id: 62,
+    name: "Michael Kors - 002",
+    price: 20000,
+    category: "Accessories",
+    gender: "Female",
+    image: "/images/Michael Kors -SB.jpg",
+    rating: 4.8,
+    colors: ["Silver"],
+    isNew: false,
+    isSale: false,
+    images: {
+      silver: ["/images/Michael Kors -SB.jpg",
+      ]
+    },
+  },
+    {
+    id: 63,
+    name: "Tommy Hilfiger",
+    price: 32000,
+    category: "Accessories",
+    gender: "Male",
+    image: "/images/Tommy Hilfiger - B32k.jpg",
+    rating: 4.8,
+    colors: ["Black"],
+    isNew: false,
+    isSale: false,
+    images: {
+      black: ["/images/Tommy Hilfiger - B32k.jpg",
+              "/images/Tommy Hilfiger - BLU32k.jpg",
+              "/images/Tommy Hilfiger - R32k.jpg" ,
+              "/images/Tommy Hilfiger - W32k.jpg" ,
+      ]
       
     },
   },
