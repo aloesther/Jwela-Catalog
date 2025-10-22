@@ -126,11 +126,10 @@ const products = [
     isNew: false,
     isSale: false,
     images: {
-      "black": [
+      "blue": [
         "/images/G shock B38.jpg",
         "/images/G shock G38.jpg",
-        "/images/G shock W38.jpg",
-    
+        "/images/G shock W38.jpg",   
       ],
     },
   },
