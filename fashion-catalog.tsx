@@ -1056,7 +1056,7 @@ const products = [
          {
     id: 56,
     name: "Lilac Complete Agbada",
-    price: 38000,
+    price: 150000,
     category: "Outfits",
     gender: "Male",
     image: "/images/Lilac Agbada.jpg",
