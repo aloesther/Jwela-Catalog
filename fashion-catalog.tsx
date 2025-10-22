@@ -1017,7 +1017,7 @@ const products = [
   
          {
     id: 54,
-    name: "2 piece outfit (Cream)",
+    name: "2 piece outfit (Off-white)",
     price: 40000,
     category: "Outfits",
     gender: "Unisex",
