@@ -993,6 +993,103 @@ const products = [
         "/images/Female Cartier Complete Set.jpg" ,
         ]
 
+          },
+  },
+  
+         {
+    id: 53,
+    name: "Black Embrodery kaftan",
+    price: 50000,
+    category: "Outfits",
+    gender: "Male",
+    image: "/images/Black Embrodery kaftan .jpg",
+    rating: 4.6,
+    colors: ["Black"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      black: [
+        "/images/Black Embrodery kaftan .jpg" ,
+        ]
+           },
+  },
+  
+         {
+    id: 54,
+    name: "2 piece outfit (Cream)",
+    price: 40000,
+    category: "Outfits",
+    gender: "Unisex",
+    image: "/images/Cream 2 piece outfit - 40k.jpg",
+    rating: 4.6,
+    colors: ["Cream"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      cream: [
+        "/images/Cream 2 piece outfit - 40k.jpg" ,
+        ]
+          },
+  },
+  
+         {
+    id: 55,
+    name: "Kids Lilac Kaftan",
+    price: 25000,
+    category: "Outfits",
+    gender: "Unisex",
+    image: "/images/Kids Kaftan.jpg",
+    rating: 4.6,
+    colors: ["Lilac"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      lilac: [
+        "/images/Kids Kaftan.jpg" ,
+        ]
+          },
+  },
+  
+         {
+    id: 56,
+    name: "Lilac Complete Agbada",
+    price: 38000,
+    category: "Outfits",
+    gender: "Male",
+    image: "/images/Lilac Agbada.jpg",
+    rating: 4.6,
+    colors: ["Lilac"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      lilac: [
+        "/images/Lilac Agbada.jpg" ,
+        ]
+          },
+  },
+  
+         {
+    id: 57,
+    name: "White Embroidery Kaftan",
+    price: 50000,
+    category: "Outfits",
+    gender: "Male",
+    image: "/images/White Embroidery Kaftan.jpg",
+    rating: 4.6,
+    colors: ["White"],
+    sizes: ["M", "L", "XL", "XXL"],
+    isNew: false,
+    isSale: false,
+    images: {
+      white: [
+        "/images/White Embroidery Kaftan.jpg" ,
+        ]
+     
+      
     },
   },
 ]
