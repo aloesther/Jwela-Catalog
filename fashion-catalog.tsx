@@ -1824,12 +1824,12 @@ export default function Component() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Product Images Slider */}
-          <ProductImageSlider product={products.find((p) => p.id === 1) || products[0]} />
+          <ProductImageSlider product={products.find((p) => p.id === 12) || products[0]} />
 
           {/* Product Details */}
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-2">Casio Wristwatch</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-2">Poedagar Wristwatch</h3>
               <div className="flex items-center gap-2 mb-4">
                 <div className="flex items-center">
                   <Star className="h-5 w-5 fill-yellow-400 text-yellow-400" />
@@ -1841,14 +1841,14 @@ export default function Component() {
                 </div>
               </div>
               <div className="flex items-center gap-3 mb-6">
-                <span className="text-3xl font-bold">₦14,000</span>
+                <span className="text-3xl font-bold">₦27,000</span>
                 <Badge className="bg-red-500 hover:bg-red-600"></Badge>
               </div>
             </div>
 
             <div className="space-y-4">
               <p className="text-muted-foreground">
-                Experience timeless functionality and style with our Casio wristwatch. 
+                Experience timeless functionality and style with our Poedagar wristwatch. 
                 Designed with precision and durability, it’s the perfect blend of everyday reliability and classic sophistication.
               </p>
 
