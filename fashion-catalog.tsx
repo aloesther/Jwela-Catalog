@@ -21,21 +21,21 @@ import { Toaster } from "@/components/ui/toaster"
 import CartFavoritesPage from "./cart-favorites-page"
 
 const products = [
-  {
+    {
     id: 1,
-    name: "Casio Wristwatch",
-    price: 14000,
-    originalPrice: 16000,
+    name: "Poedagar Wristwatch",
+    price: 27000,
+    originalPrice: 30000,
     category: "Accessories",
-    gender: "Unisex",
-    image: "/images/Casio 14.jpg",
+    gender: "Male",
+    image: "/images/Poedagar 28k - 004bbb.jpg",
     rating: 4.8,
-    colors: ["Black", "Gold", "Silver"],
+    colors: ["Slver"],
     isNew: false,
     isSale: true,
     images: {
-      "light blue": ["/images/Casio 14.jpg"                     
-      ],
+      silver: ["/images/Poedagar 28k - 004bbb.jpg",
+              "/images/Poedagar 28k - 004s.jpg ",   
     },
   },
   {
@@ -225,7 +225,7 @@ const products = [
   },
   {
     id: 12,
-    name: "Poedagar Wristwatch - 001",
+    name: "Tissot Wristwatch",
     price: 27000,
     category: "Accessories",
     gender: "Male",
@@ -1367,8 +1367,24 @@ const products = [
     images: {
       silver: ["/images/Poedagar 28k - 004bbb.jpg",
               "/images/Poedagar 28k - 004s.jpg ",
-      ]  
-            
+      ]
+     },
+  },
+    {
+    id: 74,
+    name: "Casio Wristwatch",
+    price: 14000,
+    originalPrice: 16000,
+    category: "Accessories",
+    gender: "Unisex",
+    image: "/images/Casio 14.jpg",
+    rating: 4.8,
+    colors: ["Black", "Gold", "Silver"],
+    isNew: false,
+    isSale: true,
+    images: {
+      "light blue": ["/images/Casio 14.jpg"                     
+      ],          
     },
   },
 ]
@@ -1824,7 +1840,7 @@ export default function Component() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Product Images Slider */}
-          <ProductImageSlider product={products.find((p) => p.id === 12) || products[0]} />
+          <ProductImageSlider product={products.find((p) => p.id === 1) || products[0]} />
 
           {/* Product Details */}
           <div className="space-y-6">
