@@ -23,19 +23,21 @@ import CartFavoritesPage from "./cart-favorites-page"
 const products = [
     {
     id: 1,
-    name: "Poedagar Wristwatch",
+    name: "Poedagar Wristwatch - 001",
     price: 27000,
     originalPrice: 30000,
     category: "Accessories",
     gender: "Male",
-    image: "/images/Poedagar 28k - 004bbb.jpg",
+    image: "/images/Poedagar -001.jpg",
     rating: 4.8,
     colors: ["Slver"],
     isNew: false,
     isSale: true,
     images: {
-      silver: ["/images/Poedagar 28k - 004bbb.jpg",
-              "/images/Poedagar 28k - 004s.jpg ",   
+      silver: ["/images/Poedagar -001.jpg",
+              "/images/Poedagar-001a.jpg", 
+               "/images/Poedagar-001b.jpg" ,
+               "/images/Poedagar-001c.jpg" ,
     },
   },
   {
@@ -1384,7 +1386,24 @@ const products = [
     isSale: true,
     images: {
       "light blue": ["/images/Casio 14.jpg"                     
-      ],          
+      ],
+     },
+  },
+    {
+    id: 75,
+    name: "Tissot Wristwatch",
+    price: 27000,
+    category: "Accessories",
+    gender: "Male",
+    image: "/images/Poedagar 28k - 004bbb.jpg",
+    rating: 4.8,
+    colors: ["Silver"],
+    isNew: false,
+    isSale: true,
+    images: {
+      "light blue": ["/images/Poedagar 28k - 004bbb.jpg" ,
+                     "/images/Poedagar 28k - 004s.jpg" ,
+      ], 
     },
   },
 ]
