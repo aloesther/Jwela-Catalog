@@ -25,16 +25,16 @@ const products = [
     id: 1,
     name: "Poedagar Wristwatch - 001",
     price: 27000,
-    originalprice: 30000,
+    originalPrice: 30000,
     category: "Accessories",
     gender: "Male",
     image: "/images/Poedagar -001.jpg",
     rating: 4.8,
-    colors: ["Slver"],
+    colors: ["Silver"],
     isNew: false,
     isSale: true,
     images: {
-      silver: [
+      "silver": [
         "/images/Poedagar -001.jpg" ,
         "/images/Poedagar-001a.jpg" , 
         "/images/Poedagar-001b.jpg" ,
