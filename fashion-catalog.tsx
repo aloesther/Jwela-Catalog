@@ -38,6 +38,7 @@ const products = [
               "/images/Poedagar-001a.jpg", 
                "/images/Poedagar-001b.jpg" ,
                "/images/Poedagar-001c.jpg" ,
+               ],
     },
   },
   {
